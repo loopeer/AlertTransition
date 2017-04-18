@@ -10,7 +10,7 @@ import UIKit
 
 class MainController: UITableViewController {
     
-    var titles = ["EasyTransition"]
+    var titles = ["EasyTransition", "EasyTransition use in Storyboard"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +39,11 @@ extension MainController {
         switch indexPath.row {
         case 0:
             navigationController?.pushViewController(EasyTransitionController(), animated: true)
+        case 1:
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let storyboardController = storyBoard.instantiateViewController(withIdentifier: "EasyStoryboardController") as UIViewController
+            navigationController?.pushViewController(storyboardController, animated: true)
+            break
         default:
             break
         }

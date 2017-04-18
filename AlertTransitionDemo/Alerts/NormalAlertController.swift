@@ -23,7 +23,7 @@ class NormalAlertController: UIViewController, AlertFrameProtocol {
         view.backgroundColor = .white
         
         let image = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 150))
-        image.backgroundColor = randomColor()
+        image.backgroundColor = .randomColor
         
         let title = UIView(frame: CGRect(x: 15, y: image.frame.maxY + 15, width: 100, height: 10))
         title.backgroundColor = UIColor(red: 0.74, green: 0.74, blue: 0.74, alpha: 1)
@@ -54,12 +54,4 @@ class NormalAlertController: UIViewController, AlertFrameProtocol {
     func buttonClicked(sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
-}
-
-private func randomColor() -> UIColor {
-    func randomFloat() -> CGFloat {
-        return CGFloat(Double(arc4random()) / 0x100000000)
-    }
-    
-    return UIColor(red: randomFloat(), green: randomFloat(), blue: randomFloat(), alpha: 1)
 }

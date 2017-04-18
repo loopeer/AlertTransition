@@ -58,7 +58,7 @@ open class AlertTransition: NSObject {
     
     
     // MARK: - Init
-    
+
     public init(fromController: UIViewController? = nil) {
         super.init()
         self.fromController = fromController

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790FE7EE1EA60BEB0040D499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790FE7ED1EA60BEB0040D499 /* Main.storyboard */; };
+		790FE80E1EA62E2A0040D499 /* StoryboardAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FE80D1EA62E2A0040D499 /* StoryboardAlertController.swift */; };
+		790FE8101EA64AFA0040D499 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FE80F1EA64AFA0040D499 /* Extensions.swift */; };
 		793E8A071EA4CFE200BA3325 /* AlertTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 793E8A051EA4CFE200BA3325 /* AlertTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		793E8A141EA4D11200BA3325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A131EA4D11200BA3325 /* AppDelegate.swift */; };
 		793E8A1B1EA4D11200BA3325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793E8A1A1EA4D11200BA3325 /* Assets.xcassets */; };
@@ -17,11 +20,12 @@
 		793E8A2B1EA4D36A00BA3325 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A2A1EA4D36A00BA3325 /* PresentationController.swift */; };
 		793E8A2D1EA4D39100BA3325 /* PercentDrivenInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A2C1EA4D39100BA3325 /* PercentDrivenInteractiveTransition.swift */; };
 		793E8A2F1EA4D3D400BA3325 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A2E1EA4D3D400BA3325 /* Extensions.swift */; };
-		793E8A341EA5B0AC00BA3325 /* EasyTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A331EA5B0AC00BA3325 /* EasyTransition.swift */; };
 		793E8A361EA5B7C200BA3325 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A351EA5B7C200BA3325 /* MainController.swift */; };
 		793E8A381EA5B98E00BA3325 /* EasyTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A371EA5B98E00BA3325 /* EasyTransitionController.swift */; };
 		793E8A3B1EA5BC5C00BA3325 /* NormalAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A3A1EA5BC5C00BA3325 /* NormalAlertController.swift */; };
-		793E8A3E1EA5C3E100BA3325 /* EasyPercentDrivenTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A3D1EA5C3E100BA3325 /* EasyPercentDrivenTransition.swift */; };
+		793E8A441EA5FCF600BA3325 /* EasyPercentDrivenTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A421EA5FCF600BA3325 /* EasyPercentDrivenTransition.swift */; };
+		793E8A451EA5FCF600BA3325 /* EasyTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A431EA5FCF600BA3325 /* EasyTransition.swift */; };
+		793E8A491EA602B600BA3325 /* EasyStoryboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A481EA602B600BA3325 /* EasyStoryboardController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		790FE7ED1EA60BEB0040D499 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		790FE80D1EA62E2A0040D499 /* StoryboardAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardAlertController.swift; sourceTree = "<group>"; };
+		790FE80F1EA64AFA0040D499 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		793E8A021EA4CFE200BA3325 /* AlertTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlertTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		793E8A051EA4CFE200BA3325 /* AlertTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertTransition.h; sourceTree = "<group>"; };
 		793E8A061EA4CFE200BA3325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,11 +68,12 @@
 		793E8A2A1EA4D36A00BA3325 /* PresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
 		793E8A2C1EA4D39100BA3325 /* PercentDrivenInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentDrivenInteractiveTransition.swift; sourceTree = "<group>"; };
 		793E8A2E1EA4D3D400BA3325 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		793E8A331EA5B0AC00BA3325 /* EasyTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyTransition.swift; path = Transitions/EasyTransition.swift; sourceTree = "<group>"; };
 		793E8A351EA5B7C200BA3325 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		793E8A371EA5B98E00BA3325 /* EasyTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyTransitionController.swift; sourceTree = "<group>"; };
 		793E8A3A1EA5BC5C00BA3325 /* NormalAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NormalAlertController.swift; path = Alerts/NormalAlertController.swift; sourceTree = "<group>"; };
-		793E8A3D1EA5C3E100BA3325 /* EasyPercentDrivenTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyPercentDrivenTransition.swift; path = Transitions/EasyPercentDrivenTransition.swift; sourceTree = "<group>"; };
+		793E8A421EA5FCF600BA3325 /* EasyPercentDrivenTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyPercentDrivenTransition.swift; path = Transitions/EasyTransition/EasyPercentDrivenTransition.swift; sourceTree = "<group>"; };
+		793E8A431EA5FCF600BA3325 /* EasyTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyTransition.swift; path = Transitions/EasyTransition/EasyTransition.swift; sourceTree = "<group>"; };
+		793E8A481EA602B600BA3325 /* EasyStoryboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyStoryboardController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +137,9 @@
 				793E8A1F1EA4D11200BA3325 /* Info.plist */,
 				793E8A351EA5B7C200BA3325 /* MainController.swift */,
 				793E8A371EA5B98E00BA3325 /* EasyTransitionController.swift */,
+				793E8A481EA602B600BA3325 /* EasyStoryboardController.swift */,
+				790FE7ED1EA60BEB0040D499 /* Main.storyboard */,
+				790FE80F1EA64AFA0040D499 /* Extensions.swift */,
 			);
 			path = AlertTransitionDemo;
 			sourceTree = "<group>";
@@ -136,8 +147,7 @@
 		793E8A321EA5B08B00BA3325 /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
-				793E8A331EA5B0AC00BA3325 /* EasyTransition.swift */,
-				793E8A3D1EA5C3E100BA3325 /* EasyPercentDrivenTransition.swift */,
+				793E8A411EA5FCDD00BA3325 /* EasyTransition */,
 			);
 			name = Transitions;
 			sourceTree = "<group>";
@@ -146,8 +156,18 @@
 			isa = PBXGroup;
 			children = (
 				793E8A3A1EA5BC5C00BA3325 /* NormalAlertController.swift */,
+				790FE80D1EA62E2A0040D499 /* StoryboardAlertController.swift */,
 			);
 			name = Alerts;
+			sourceTree = "<group>";
+		};
+		793E8A411EA5FCDD00BA3325 /* EasyTransition */ = {
+			isa = PBXGroup;
+			children = (
+				793E8A421EA5FCF600BA3325 /* EasyPercentDrivenTransition.swift */,
+				793E8A431EA5FCF600BA3325 /* EasyTransition.swift */,
+			);
+			name = EasyTransition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +277,7 @@
 			files = (
 				793E8A1E1EA4D11200BA3325 /* LaunchScreen.storyboard in Resources */,
 				793E8A1B1EA4D11200BA3325 /* Assets.xcassets in Resources */,
+				790FE7EE1EA60BEB0040D499 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,9 +290,9 @@
 			files = (
 				793E8A291EA4D28700BA3325 /* AlertTransition.swift in Sources */,
 				793E8A2D1EA4D39100BA3325 /* PercentDrivenInteractiveTransition.swift in Sources */,
-				793E8A341EA5B0AC00BA3325 /* EasyTransition.swift in Sources */,
-				793E8A3E1EA5C3E100BA3325 /* EasyPercentDrivenTransition.swift in Sources */,
+				793E8A451EA5FCF600BA3325 /* EasyTransition.swift in Sources */,
 				793E8A2B1EA4D36A00BA3325 /* PresentationController.swift in Sources */,
+				793E8A441EA5FCF600BA3325 /* EasyPercentDrivenTransition.swift in Sources */,
 				793E8A2F1EA4D3D400BA3325 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,9 +302,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				793E8A381EA5B98E00BA3325 /* EasyTransitionController.swift in Sources */,
+				793E8A491EA602B600BA3325 /* EasyStoryboardController.swift in Sources */,
 				793E8A361EA5B7C200BA3325 /* MainController.swift in Sources */,
 				793E8A141EA4D11200BA3325 /* AppDelegate.swift in Sources */,
 				793E8A3B1EA5BC5C00BA3325 /* NormalAlertController.swift in Sources */,
+				790FE80E1EA62E2A0040D499 /* StoryboardAlertController.swift in Sources */,
+				790FE8101EA64AFA0040D499 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +535,7 @@
 				793E8A221EA4D11200BA3325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

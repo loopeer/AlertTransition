@@ -12,20 +12,26 @@ import UIKit
 public extension EasyTransition {
     enum AnimationType {
         case transition(x: CGFloat, y: CGFloat)
-        case rotation(angle: CGFloat)
+        case rotation(angle: CGFloat, anchorPoint: CGPoint)
         case scale(CGFloat)
         case alpha(CGFloat)
         
-        var transform: CGAffineTransform {
+        func apply(to view: UIView) {
+            
             switch self {
             case .transition(let x, let y):
-                return CGAffineTransform(translationX: x, y: y)
-            case .rotation(let angle):
-                return CGAffineTransform(rotationAngle: angle)
+                view.transform = view.transform.concatenating(CGAffineTransform(translationX: x, y: y))
+            case .rotation(let angle, let anchorPoint):
+                let originOffset = CGPoint(x: anchorPoint.x - view.layer.anchorPoint.x, y: anchorPoint.y - view.layer.anchorPoint.y)
+                let positionOffset = CGPoint(x: originOffset.x * view.layer.frame.width, y: originOffset.y * view.layer.frame.height)
+                
+                view.layer.anchorPoint = anchorPoint
+                view.layer.position = CGPoint(x: view.layer.position.x + positionOffset.x, y: view.layer.position.y + positionOffset.y)
+                view.transform = view.transform.concatenating(CGAffineTransform(rotationAngle: angle))
             case .scale(let scale):
-                return CGAffineTransform(scaleX: scale, y: scale)
-            default:
-                return CGAffineTransform.identity
+                view.transform = view.transform.concatenating(CGAffineTransform(scaleX: scale, y: scale))
+            case .alpha(let alpha):
+                view.alpha = alpha
             }
         }
     }
@@ -106,16 +112,6 @@ public class EasyTransition: AlertTransition {
     }
     
     func apply(transforms: [AnimationType], to view: UIView) {
-        let transform = transforms.reduce(CGAffineTransform.identity) { $0.concatenating($1.transform) }
-        
-        view.transform = transform
-        
-        transforms.forEach {
-            guard case let AnimationType.alpha(alpha) = $0 else {
-                return
-            }
-            
-            view.alpha = alpha
-        }
+        transforms.forEach { $0.apply(to: view) }
     }
 }
