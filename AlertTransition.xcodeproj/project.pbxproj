@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		575B4C71841D978DE405EAAC /* Pods_AlertTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B043D8E060CF5513EAA5F2 /* Pods_AlertTransition.framework */; };
 		790FE7EE1EA60BEB0040D499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790FE7ED1EA60BEB0040D499 /* Main.storyboard */; };
-		790FE80E1EA62E2A0040D499 /* StoryboardAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FE80D1EA62E2A0040D499 /* StoryboardAlertController.swift */; };
 		790FE8101EA64AFA0040D499 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FE80F1EA64AFA0040D499 /* Extensions.swift */; };
+		790FE8121EA72C120040D499 /* DifferentAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FE8111EA72C120040D499 /* DifferentAlertController.swift */; };
+		790FE8141EA72F9B0040D499 /* SnapKitAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FE8131EA72F9B0040D499 /* SnapKitAlertController.swift */; };
+		790FE8161EA72FC50040D499 /* StoryboardAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FE8151EA72FC50040D499 /* StoryboardAlertController.swift */; };
 		793E8A071EA4CFE200BA3325 /* AlertTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 793E8A051EA4CFE200BA3325 /* AlertTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		793E8A141EA4D11200BA3325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A131EA4D11200BA3325 /* AppDelegate.swift */; };
 		793E8A1B1EA4D11200BA3325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793E8A1A1EA4D11200BA3325 /* Assets.xcassets */; };
@@ -26,6 +29,7 @@
 		793E8A441EA5FCF600BA3325 /* EasyPercentDrivenTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A421EA5FCF600BA3325 /* EasyPercentDrivenTransition.swift */; };
 		793E8A451EA5FCF600BA3325 /* EasyTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A431EA5FCF600BA3325 /* EasyTransition.swift */; };
 		793E8A491EA602B600BA3325 /* EasyStoryboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A481EA602B600BA3325 /* EasyStoryboardController.swift */; };
+		FF864D92FE4ED8E188B7118C /* Pods_AlertTransitionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D5E80FCCA63971878F53EB /* Pods_AlertTransitionDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +57,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1215930E016B4F5454B04C25 /* Pods-AlertTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTransition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlertTransition/Pods-AlertTransition.debug.xcconfig"; sourceTree = "<group>"; };
+		2A47BBF40FBD0C0E2FD36DE2 /* Pods-AlertTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTransition.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlertTransition/Pods-AlertTransition.release.xcconfig"; sourceTree = "<group>"; };
+		3EAE73D045222165FB810F05 /* Pods-AlertTransitionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTransitionDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlertTransitionDemo/Pods-AlertTransitionDemo.release.xcconfig"; sourceTree = "<group>"; };
+		46D5E80FCCA63971878F53EB /* Pods_AlertTransitionDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlertTransitionDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		790FE7ED1EA60BEB0040D499 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		790FE80D1EA62E2A0040D499 /* StoryboardAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardAlertController.swift; sourceTree = "<group>"; };
 		790FE80F1EA64AFA0040D499 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		790FE8111EA72C120040D499 /* DifferentAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DifferentAlertController.swift; sourceTree = "<group>"; };
+		790FE8131EA72F9B0040D499 /* SnapKitAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapKitAlertController.swift; path = Alerts/SnapKitAlertController.swift; sourceTree = "<group>"; };
+		790FE8151EA72FC50040D499 /* StoryboardAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardAlertController.swift; path = Alerts/StoryboardAlertController.swift; sourceTree = "<group>"; };
 		793E8A021EA4CFE200BA3325 /* AlertTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlertTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		793E8A051EA4CFE200BA3325 /* AlertTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertTransition.h; sourceTree = "<group>"; };
 		793E8A061EA4CFE200BA3325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +84,8 @@
 		793E8A421EA5FCF600BA3325 /* EasyPercentDrivenTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyPercentDrivenTransition.swift; path = Transitions/EasyTransition/EasyPercentDrivenTransition.swift; sourceTree = "<group>"; };
 		793E8A431EA5FCF600BA3325 /* EasyTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyTransition.swift; path = Transitions/EasyTransition/EasyTransition.swift; sourceTree = "<group>"; };
 		793E8A481EA602B600BA3325 /* EasyStoryboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyStoryboardController.swift; sourceTree = "<group>"; };
+		87B043D8E060CF5513EAA5F2 /* Pods_AlertTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlertTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C892AFC9C414AC1076F0A085 /* Pods-AlertTransitionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTransitionDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlertTransitionDemo/Pods-AlertTransitionDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				575B4C71841D978DE405EAAC /* Pods_AlertTransition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,18 +102,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				793E8A231EA4D13500BA3325 /* AlertTransition.framework in Frameworks */,
+				FF864D92FE4ED8E188B7118C /* Pods_AlertTransitionDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2539B46ED676C34DD8F7E1AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1215930E016B4F5454B04C25 /* Pods-AlertTransition.debug.xcconfig */,
+				2A47BBF40FBD0C0E2FD36DE2 /* Pods-AlertTransition.release.xcconfig */,
+				C892AFC9C414AC1076F0A085 /* Pods-AlertTransitionDemo.debug.xcconfig */,
+				3EAE73D045222165FB810F05 /* Pods-AlertTransitionDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		58F591B8CAB4A4474D59E644 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87B043D8E060CF5513EAA5F2 /* Pods_AlertTransition.framework */,
+				46D5E80FCCA63971878F53EB /* Pods_AlertTransitionDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		793E89F81EA4CFE200BA3325 = {
 			isa = PBXGroup;
 			children = (
 				793E8A041EA4CFE200BA3325 /* AlertTransition */,
 				793E8A121EA4D11200BA3325 /* AlertTransitionDemo */,
 				793E8A031EA4CFE200BA3325 /* Products */,
+				2539B46ED676C34DD8F7E1AB /* Pods */,
+				58F591B8CAB4A4474D59E644 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +176,7 @@
 				793E8A481EA602B600BA3325 /* EasyStoryboardController.swift */,
 				790FE7ED1EA60BEB0040D499 /* Main.storyboard */,
 				790FE80F1EA64AFA0040D499 /* Extensions.swift */,
+				790FE8111EA72C120040D499 /* DifferentAlertController.swift */,
 			);
 			path = AlertTransitionDemo;
 			sourceTree = "<group>";
@@ -155,8 +192,9 @@
 		793E8A391EA5BC1900BA3325 /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
+				790FE8151EA72FC50040D499 /* StoryboardAlertController.swift */,
 				793E8A3A1EA5BC5C00BA3325 /* NormalAlertController.swift */,
-				790FE80D1EA62E2A0040D499 /* StoryboardAlertController.swift */,
+				790FE8131EA72F9B0040D499 /* SnapKitAlertController.swift */,
 			);
 			name = Alerts;
 			sourceTree = "<group>";
@@ -188,10 +226,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 793E8A0A1EA4CFE200BA3325 /* Build configuration list for PBXNativeTarget "AlertTransition" */;
 			buildPhases = (
+				FDC8C717F37C5D0908302658 /* [CP] Check Pods Manifest.lock */,
 				793E89FD1EA4CFE200BA3325 /* Sources */,
 				793E89FE1EA4CFE200BA3325 /* Frameworks */,
 				793E89FF1EA4CFE200BA3325 /* Headers */,
 				793E8A001EA4CFE200BA3325 /* Resources */,
+				FBF6430F342618448D8803F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,10 +246,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 793E8A201EA4D11200BA3325 /* Build configuration list for PBXNativeTarget "AlertTransitionDemo" */;
 			buildPhases = (
+				A7B7DE3DF7AFF1C7C85A408B /* [CP] Check Pods Manifest.lock */,
 				793E8A0D1EA4D11200BA3325 /* Sources */,
 				793E8A0E1EA4D11200BA3325 /* Frameworks */,
 				793E8A0F1EA4D11200BA3325 /* Resources */,
 				793E8A271EA4D13500BA3325 /* Embed Frameworks */,
+				E5607C9777414F27DAEBC417 /* [CP] Embed Pods Frameworks */,
+				C40D1F90111075EAE56D68B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,6 +326,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A7B7DE3DF7AFF1C7C85A408B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C40D1F90111075EAE56D68B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlertTransitionDemo/Pods-AlertTransitionDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5607C9777414F27DAEBC417 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlertTransitionDemo/Pods-AlertTransitionDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBF6430F342618448D8803F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlertTransition/Pods-AlertTransition-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDC8C717F37C5D0908302658 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		793E89FD1EA4CFE200BA3325 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -303,10 +424,12 @@
 			files = (
 				793E8A381EA5B98E00BA3325 /* EasyTransitionController.swift in Sources */,
 				793E8A491EA602B600BA3325 /* EasyStoryboardController.swift in Sources */,
+				790FE8161EA72FC50040D499 /* StoryboardAlertController.swift in Sources */,
+				790FE8141EA72F9B0040D499 /* SnapKitAlertController.swift in Sources */,
 				793E8A361EA5B7C200BA3325 /* MainController.swift in Sources */,
 				793E8A141EA4D11200BA3325 /* AppDelegate.swift in Sources */,
+				790FE8121EA72C120040D499 /* DifferentAlertController.swift in Sources */,
 				793E8A3B1EA5BC5C00BA3325 /* NormalAlertController.swift in Sources */,
-				790FE80E1EA62E2A0040D499 /* StoryboardAlertController.swift in Sources */,
 				790FE8101EA64AFA0040D499 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +559,7 @@
 		};
 		793E8A0B1EA4CFE200BA3325 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1215930E016B4F5454B04C25 /* Pods-AlertTransition.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -458,6 +582,7 @@
 		};
 		793E8A0C1EA4CFE200BA3325 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A47BBF40FBD0C0E2FD36DE2 /* Pods-AlertTransition.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -479,6 +604,7 @@
 		};
 		793E8A211EA4D11200BA3325 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C892AFC9C414AC1076F0A085 /* Pods-AlertTransitionDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -494,6 +620,7 @@
 		};
 		793E8A221EA4D11200BA3325 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EAE73D045222165FB810F05 /* Pods-AlertTransitionDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

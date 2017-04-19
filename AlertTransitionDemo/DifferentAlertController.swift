@@ -1,16 +1,18 @@
 //
-//  MainController.swift
+//  DifferentAlertController.swift
 //  AlertTransition
 //
-//  Created by 韩帅 on 2017/4/18.
+//  Created by 韩帅 on 2017/4/19.
 //  Copyright © 2017年 Loopeer. All rights reserved.
 //
 
 import UIKit
+import AlertTransition
 
-class MainController: UITableViewController {
+class DifferentAlertController: UITableViewController {
     
-    var titles = ["EasyTransition", "EasyTransition use in Storyboard", "Different Alert Implementation"]
+    var titles = ["Alert (AlertFrameProtocol)", "Alert (constraints, storyboard)", "Alert (constraints, SnapKit)"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +24,7 @@ class MainController: UITableViewController {
     }
 }
 
-extension MainController {
+extension DifferentAlertController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return titles.count
     }
@@ -36,17 +38,23 @@ extension MainController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         
+        
+        let alert: UIViewController
+        
         switch indexPath.row {
         case 0:
-            navigationController?.pushViewController(EasyTransitionController(), animated: true)
+            alert = NormalAlertController()
         case 1:
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-            let storyboardController = storyBoard.instantiateViewController(withIdentifier: "EasyStoryboardController") as UIViewController
-            navigationController?.pushViewController(storyboardController, animated: true)
-        case 2:
-            navigationController?.pushViewController(DifferentAlertController(), animated: true)
+            alert = storyBoard.instantiateViewController(withIdentifier: "StoryboardAlertController") as UIViewController
         default:
-            break
+            alert = SnapKitAlertController()
         }
+        
+        let transition = EasyTransition()
+        transition.startTransforms = [.alpha(0), .rotation(angle: 0.75, anchorPoint: CGPoint(x: 0, y: 0)), .scale(0.5), .transition(x: 0, y: 200)]
+        alert.at.transition = transition
+        
+        present(alert, animated: true, completion: nil)
     }
 }
