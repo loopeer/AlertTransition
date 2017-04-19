@@ -13,6 +13,7 @@
 		790FE8121EA72C120040D499 /* DifferentAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FE8111EA72C120040D499 /* DifferentAlertController.swift */; };
 		790FE8141EA72F9B0040D499 /* SnapKitAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FE8131EA72F9B0040D499 /* SnapKitAlertController.swift */; };
 		790FE8161EA72FC50040D499 /* StoryboardAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FE8151EA72FC50040D499 /* StoryboardAlertController.swift */; };
+		7938B22C1EA75A8500F2D71B /* MenuPercentDrivenTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938B22B1EA75A8500F2D71B /* MenuPercentDrivenTransition.swift */; };
 		793E8A071EA4CFE200BA3325 /* AlertTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 793E8A051EA4CFE200BA3325 /* AlertTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		793E8A141EA4D11200BA3325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A131EA4D11200BA3325 /* AppDelegate.swift */; };
 		793E8A1B1EA4D11200BA3325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793E8A1A1EA4D11200BA3325 /* Assets.xcassets */; };
@@ -29,6 +30,10 @@
 		793E8A441EA5FCF600BA3325 /* EasyPercentDrivenTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A421EA5FCF600BA3325 /* EasyPercentDrivenTransition.swift */; };
 		793E8A451EA5FCF600BA3325 /* EasyTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A431EA5FCF600BA3325 /* EasyTransition.swift */; };
 		793E8A491EA602B600BA3325 /* EasyStoryboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A481EA602B600BA3325 /* EasyStoryboardController.swift */; };
+		79474AA41EA75C6800873736 /* MenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79474AA31EA75C6800873736 /* MenuTransition.swift */; };
+		79474AA61EA75E7100873736 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79474AA51EA75E7100873736 /* MenuController.swift */; };
+		79474AA81EA7643100873736 /* TrolleyTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79474AA71EA7643100873736 /* TrolleyTransition.swift */; };
+		79474AAA1EA764EC00873736 /* TrolleyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79474AA91EA764EC00873736 /* TrolleyController.swift */; };
 		FF864D92FE4ED8E188B7118C /* Pods_AlertTransitionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D5E80FCCA63971878F53EB /* Pods_AlertTransitionDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +71,7 @@
 		790FE8111EA72C120040D499 /* DifferentAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DifferentAlertController.swift; sourceTree = "<group>"; };
 		790FE8131EA72F9B0040D499 /* SnapKitAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapKitAlertController.swift; path = Alerts/SnapKitAlertController.swift; sourceTree = "<group>"; };
 		790FE8151EA72FC50040D499 /* StoryboardAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardAlertController.swift; path = Alerts/StoryboardAlertController.swift; sourceTree = "<group>"; };
+		7938B22B1EA75A8500F2D71B /* MenuPercentDrivenTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuPercentDrivenTransition.swift; path = Transitions/MenuTransition/MenuPercentDrivenTransition.swift; sourceTree = "<group>"; };
 		793E8A021EA4CFE200BA3325 /* AlertTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlertTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		793E8A051EA4CFE200BA3325 /* AlertTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertTransition.h; sourceTree = "<group>"; };
 		793E8A061EA4CFE200BA3325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +90,10 @@
 		793E8A421EA5FCF600BA3325 /* EasyPercentDrivenTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyPercentDrivenTransition.swift; path = Transitions/EasyTransition/EasyPercentDrivenTransition.swift; sourceTree = "<group>"; };
 		793E8A431EA5FCF600BA3325 /* EasyTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyTransition.swift; path = Transitions/EasyTransition/EasyTransition.swift; sourceTree = "<group>"; };
 		793E8A481EA602B600BA3325 /* EasyStoryboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyStoryboardController.swift; sourceTree = "<group>"; };
+		79474AA31EA75C6800873736 /* MenuTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTransition.swift; path = Transitions/MenuTransition/MenuTransition.swift; sourceTree = "<group>"; };
+		79474AA51EA75E7100873736 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		79474AA71EA7643100873736 /* TrolleyTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrolleyTransition.swift; path = Transitions/TrolleyTransition.swift; sourceTree = "<group>"; };
+		79474AA91EA764EC00873736 /* TrolleyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrolleyController.swift; sourceTree = "<group>"; };
 		87B043D8E060CF5513EAA5F2 /* Pods_AlertTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlertTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C892AFC9C414AC1076F0A085 /* Pods-AlertTransitionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTransitionDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlertTransitionDemo/Pods-AlertTransitionDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +137,15 @@
 				46D5E80FCCA63971878F53EB /* Pods_AlertTransitionDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7938B22A1EA75A2600F2D71B /* MenuTransition */ = {
+			isa = PBXGroup;
+			children = (
+				7938B22B1EA75A8500F2D71B /* MenuPercentDrivenTransition.swift */,
+				79474AA31EA75C6800873736 /* MenuTransition.swift */,
+			);
+			name = MenuTransition;
 			sourceTree = "<group>";
 		};
 		793E89F81EA4CFE200BA3325 = {
@@ -177,6 +196,8 @@
 				790FE7ED1EA60BEB0040D499 /* Main.storyboard */,
 				790FE80F1EA64AFA0040D499 /* Extensions.swift */,
 				790FE8111EA72C120040D499 /* DifferentAlertController.swift */,
+				79474AA51EA75E7100873736 /* MenuController.swift */,
+				79474AA91EA764EC00873736 /* TrolleyController.swift */,
 			);
 			path = AlertTransitionDemo;
 			sourceTree = "<group>";
@@ -184,7 +205,9 @@
 		793E8A321EA5B08B00BA3325 /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
+				7938B22A1EA75A2600F2D71B /* MenuTransition */,
 				793E8A411EA5FCDD00BA3325 /* EasyTransition */,
+				79474AA71EA7643100873736 /* TrolleyTransition.swift */,
 			);
 			name = Transitions;
 			sourceTree = "<group>";
@@ -409,12 +432,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7938B22C1EA75A8500F2D71B /* MenuPercentDrivenTransition.swift in Sources */,
 				793E8A291EA4D28700BA3325 /* AlertTransition.swift in Sources */,
 				793E8A2D1EA4D39100BA3325 /* PercentDrivenInteractiveTransition.swift in Sources */,
 				793E8A451EA5FCF600BA3325 /* EasyTransition.swift in Sources */,
 				793E8A2B1EA4D36A00BA3325 /* PresentationController.swift in Sources */,
 				793E8A441EA5FCF600BA3325 /* EasyPercentDrivenTransition.swift in Sources */,
 				793E8A2F1EA4D3D400BA3325 /* Extensions.swift in Sources */,
+				79474AA41EA75C6800873736 /* MenuTransition.swift in Sources */,
+				79474AA81EA7643100873736 /* TrolleyTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,11 +448,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79474AA61EA75E7100873736 /* MenuController.swift in Sources */,
 				793E8A381EA5B98E00BA3325 /* EasyTransitionController.swift in Sources */,
 				793E8A491EA602B600BA3325 /* EasyStoryboardController.swift in Sources */,
 				790FE8161EA72FC50040D499 /* StoryboardAlertController.swift in Sources */,
 				790FE8141EA72F9B0040D499 /* SnapKitAlertController.swift in Sources */,
 				793E8A361EA5B7C200BA3325 /* MainController.swift in Sources */,
+				79474AAA1EA764EC00873736 /* TrolleyController.swift in Sources */,
 				793E8A141EA4D11200BA3325 /* AppDelegate.swift in Sources */,
 				790FE8121EA72C120040D499 /* DifferentAlertController.swift in Sources */,
 				793E8A3B1EA5BC5C00BA3325 /* NormalAlertController.swift in Sources */,

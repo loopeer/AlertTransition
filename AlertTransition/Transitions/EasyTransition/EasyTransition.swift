@@ -72,8 +72,8 @@ public class EasyTransition: AlertTransition {
         }
     }
     
-    public override init(fromController: UIViewController? = nil) {
-        super.init(fromController: fromController)
+    public override init(from controller: UIViewController? = nil) {
+        super.init(from: controller)
         
         interactionTransitionType = EasyPercentDrivenTransition.self
     }

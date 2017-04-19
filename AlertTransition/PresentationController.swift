@@ -16,6 +16,7 @@ open class PresentationController: UIPresentationController {
     /// The background view, initialized when presentationTransitionWillBegin, inserted to view hierarchy when containerViewWillLayoutSubviews
     public fileprivate(set) var maskView: UIView?
     
+    private var deviceOrientation = UIDeviceOrientation.portrait
     
     open override var frameOfPresentedViewInContainerView: CGRect {
         if let frame = (presentedViewController as? AlertFrameProtocol)?.alertFrame {
@@ -31,10 +32,10 @@ open class PresentationController: UIPresentationController {
     
     override open func presentationTransitionWillBegin() {
         containerView?.addSubview(presentedView!)
-        
         if maskView == nil {
             maskView = makeMaskView()
         }
+        deviceOrientation = UIDevice.current.orientation
     }
     
     override open func containerViewWillLayoutSubviews() {
@@ -42,6 +43,9 @@ open class PresentationController: UIPresentationController {
             containerView?.insertSubview(view, at: 0)
         }
         
+        guard deviceOrientation != UIDevice.current.orientation else { return }
+        
+        deviceOrientation = UIDevice.current.orientation
         /// Change Device Orientation
         maskView?.frame = UIScreen.main.bounds
         presentedView?.frame = frameOfPresentedViewInContainerView

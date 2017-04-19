@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import AlertTransition
 
 class MainController: UITableViewController {
     
-    var titles = ["EasyTransition", "EasyTransition use in Storyboard", "Different Alert Implementation"]
+    var titles = ["EasyTransition", "EasyTransition use in Storyboard", "Different Alert Implementation", "Menu Transition", "TrolleyTransition"]
+    var menuController = MenuController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,9 @@ class MainController: UITableViewController {
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.description())
         tableView.tableFooterView = UIView()
+        
+        let transition = MenuTransition(from: navigationController)
+        menuController.at.transition = transition
     }
 }
 
@@ -30,6 +35,7 @@ extension MainController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.description(), for: indexPath)
         cell.textLabel?.text = titles[indexPath.row]
+        cell.selectionStyle = .none
         return cell
     }
     
@@ -45,6 +51,12 @@ extension MainController {
             navigationController?.pushViewController(storyboardController, animated: true)
         case 2:
             navigationController?.pushViewController(DifferentAlertController(), animated: true)
+        case 3:
+            navigationController?.present(menuController, animated: true, completion: nil)
+        case 4:
+            let trolleyController = TrolleyController()
+            trolleyController.at.transition = TrolleyTransition()
+            present(trolleyController, animated: true, completion: nil)
         default:
             break
         }

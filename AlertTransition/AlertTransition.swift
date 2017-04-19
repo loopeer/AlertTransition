@@ -59,13 +59,13 @@ open class AlertTransition: NSObject {
     
     // MARK: - Init
 
-    public init(fromController: UIViewController? = nil) {
+    public init(from controller: UIViewController? = nil) {
         super.init()
-        self.fromController = fromController
+        self.fromController = controller
     }
     
     public override convenience init() {
-        self.init(fromController: nil)
+        self.init(from: nil)
     }
     
     
