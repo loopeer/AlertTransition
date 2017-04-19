@@ -45,7 +45,7 @@ class SnapKitAlertController: UIViewController {
         view.addSubview(button)
         
         image.snp.makeConstraints { make in
-            make.width.equalTo(200)
+            make.width.equalTo(200).priority(999)
             make.height.equalTo(150)
             make.left.top.right.equalToSuperview()
         }
@@ -76,7 +76,7 @@ class SnapKitAlertController: UIViewController {
             make.height.equalTo(10)
             make.left.equalToSuperview().offset(15)
             make.top.equalTo(content2.snp.bottom).offset(15)
-            make.bottom.equalToSuperview().offset(-15)
+            make.bottom.equalToSuperview().offset(-15).priority(999)
         }
     }
     

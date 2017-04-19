@@ -23,4 +23,5 @@ open class PercentDrivenInteractiveTransition: UIPercentDrivenInteractiveTransit
     // hook, called when transition is set to controller
     open func setup(presentingView: UIView?) { }
     open func setup(presentedView: UIView) { }
+    open func deviceOrientationChanged() { }
 }

@@ -38,9 +38,14 @@ open class PresentationController: UIPresentationController {
     }
     
     override open func containerViewWillLayoutSubviews() {
-        if let view = maskView {
+        if let view = maskView, view.superview == nil {
             containerView?.insertSubview(view, at: 0)
         }
+        
+        /// Change Device Orientation
+        maskView?.frame = UIScreen.main.bounds
+        presentedView?.frame = frameOfPresentedViewInContainerView
+        transition?.interactionTransition?.deviceOrientationChanged()
     }
     
     /// Override this method to make custom MaskView
