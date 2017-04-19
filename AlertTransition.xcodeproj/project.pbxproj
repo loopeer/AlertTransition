@@ -34,6 +34,7 @@
 		79474AA61EA75E7100873736 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79474AA51EA75E7100873736 /* MenuController.swift */; };
 		79474AA81EA7643100873736 /* TrolleyTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79474AA71EA7643100873736 /* TrolleyTransition.swift */; };
 		79474AAA1EA764EC00873736 /* TrolleyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79474AA91EA764EC00873736 /* TrolleyController.swift */; };
+		79474AAC1EA7702600873736 /* BackgroundTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79474AAB1EA7702600873736 /* BackgroundTypeController.swift */; };
 		FF864D92FE4ED8E188B7118C /* Pods_AlertTransitionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D5E80FCCA63971878F53EB /* Pods_AlertTransitionDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,7 @@
 		79474AA51EA75E7100873736 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		79474AA71EA7643100873736 /* TrolleyTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrolleyTransition.swift; path = Transitions/TrolleyTransition.swift; sourceTree = "<group>"; };
 		79474AA91EA764EC00873736 /* TrolleyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrolleyController.swift; sourceTree = "<group>"; };
+		79474AAB1EA7702600873736 /* BackgroundTypeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundTypeController.swift; sourceTree = "<group>"; };
 		87B043D8E060CF5513EAA5F2 /* Pods_AlertTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlertTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C892AFC9C414AC1076F0A085 /* Pods-AlertTransitionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTransitionDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlertTransitionDemo/Pods-AlertTransitionDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,6 +200,7 @@
 				790FE8111EA72C120040D499 /* DifferentAlertController.swift */,
 				79474AA51EA75E7100873736 /* MenuController.swift */,
 				79474AA91EA764EC00873736 /* TrolleyController.swift */,
+				79474AAB1EA7702600873736 /* BackgroundTypeController.swift */,
 			);
 			path = AlertTransitionDemo;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				79474AA61EA75E7100873736 /* MenuController.swift in Sources */,
 				793E8A381EA5B98E00BA3325 /* EasyTransitionController.swift in Sources */,
 				793E8A491EA602B600BA3325 /* EasyStoryboardController.swift in Sources */,
+				79474AAC1EA7702600873736 /* BackgroundTypeController.swift in Sources */,
 				790FE8161EA72FC50040D499 /* StoryboardAlertController.swift in Sources */,
 				790FE8141EA72F9B0040D499 /* SnapKitAlertController.swift in Sources */,
 				793E8A361EA5B7C200BA3325 /* MainController.swift in Sources */,

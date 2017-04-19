@@ -11,7 +11,7 @@ import AlertTransition
 
 class MainController: UITableViewController {
     
-    var titles = ["EasyTransition", "EasyTransition use in Storyboard", "Different Alert Implementation", "Menu Transition", "TrolleyTransition"]
+    var titles = ["EasyTransition", "EasyTransition use in Storyboard", "Different Alert Implementation", "BackgroundType", "MenuTransition", "TrolleyTransition"]
     var menuController = MenuController()
     
     override func viewDidLoad() {
@@ -52,8 +52,10 @@ extension MainController {
         case 2:
             navigationController?.pushViewController(DifferentAlertController(), animated: true)
         case 3:
-            navigationController?.present(menuController, animated: true, completion: nil)
+            navigationController?.pushViewController(BackgroundTypeController(), animated: true)
         case 4:
+            navigationController?.present(menuController, animated: true, completion: nil)
+        case 5:
             let trolleyController = TrolleyController()
             trolleyController.at.transition = TrolleyTransition()
             present(trolleyController, animated: true, completion: nil)
