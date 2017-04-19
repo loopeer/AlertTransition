@@ -11,7 +11,7 @@ import AlertTransition
 
 class MainController: UITableViewController {
     
-    var titles = ["EasyTransition", "EasyTransition use in Storyboard", "Different Alert Implementation", "BackgroundType", "MenuTransition", "TrolleyTransition"]
+    var titles = ["EasyTransition", "EasyTransition use in Storyboard", "Different Alert Implementation", "BackgroundType", "MenuTransition", "TrolleyTransition", "BubbleTransition"]
     var menuController = MenuController()
     
     override func viewDidLoad() {
@@ -59,6 +59,16 @@ extension MainController {
             let trolleyController = TrolleyController()
             trolleyController.at.transition = TrolleyTransition()
             present(trolleyController, animated: true, completion: nil)
+        case 6:
+            let alert = BubbleController()
+            
+            let transition = BubbleTransition()
+            transition.bubbleColor = .red
+            transition.startingPoint = CGPoint(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height - 50)
+            
+            alert.at.transition = transition
+            
+            present(alert, animated: true, completion: nil)
         default:
             break
         }

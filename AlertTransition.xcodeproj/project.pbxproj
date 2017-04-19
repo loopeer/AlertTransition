@@ -35,6 +35,8 @@
 		79474AA81EA7643100873736 /* TrolleyTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79474AA71EA7643100873736 /* TrolleyTransition.swift */; };
 		79474AAA1EA764EC00873736 /* TrolleyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79474AA91EA764EC00873736 /* TrolleyController.swift */; };
 		79474AAC1EA7702600873736 /* BackgroundTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79474AAB1EA7702600873736 /* BackgroundTypeController.swift */; };
+		79962C091EA779D70046B631 /* BubbleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79962C081EA779D70046B631 /* BubbleTransition.swift */; };
+		79962C0B1EA77ED80046B631 /* BubbleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79962C0A1EA77ED80046B631 /* BubbleController.swift */; };
 		FF864D92FE4ED8E188B7118C /* Pods_AlertTransitionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D5E80FCCA63971878F53EB /* Pods_AlertTransitionDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +98,8 @@
 		79474AA71EA7643100873736 /* TrolleyTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrolleyTransition.swift; path = Transitions/TrolleyTransition.swift; sourceTree = "<group>"; };
 		79474AA91EA764EC00873736 /* TrolleyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrolleyController.swift; sourceTree = "<group>"; };
 		79474AAB1EA7702600873736 /* BackgroundTypeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundTypeController.swift; sourceTree = "<group>"; };
+		79962C081EA779D70046B631 /* BubbleTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BubbleTransition.swift; path = CustomTransition/BubbleTransition.swift; sourceTree = "<group>"; };
+		79962C0A1EA77ED80046B631 /* BubbleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleController.swift; sourceTree = "<group>"; };
 		87B043D8E060CF5513EAA5F2 /* Pods_AlertTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlertTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C892AFC9C414AC1076F0A085 /* Pods-AlertTransitionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTransitionDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlertTransitionDemo/Pods-AlertTransitionDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,6 +191,7 @@
 		793E8A121EA4D11200BA3325 /* AlertTransitionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				79962C071EA7799C0046B631 /* CustomTransitions */,
 				793E8A391EA5BC1900BA3325 /* Alerts */,
 				793E8A131EA4D11200BA3325 /* AppDelegate.swift */,
 				793E8A1A1EA4D11200BA3325 /* Assets.xcassets */,
@@ -201,6 +206,7 @@
 				79474AA51EA75E7100873736 /* MenuController.swift */,
 				79474AA91EA764EC00873736 /* TrolleyController.swift */,
 				79474AAB1EA7702600873736 /* BackgroundTypeController.swift */,
+				79962C0A1EA77ED80046B631 /* BubbleController.swift */,
 			);
 			path = AlertTransitionDemo;
 			sourceTree = "<group>";
@@ -232,6 +238,14 @@
 				793E8A431EA5FCF600BA3325 /* EasyTransition.swift */,
 			);
 			name = EasyTransition;
+			sourceTree = "<group>";
+		};
+		79962C071EA7799C0046B631 /* CustomTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				79962C081EA779D70046B631 /* BubbleTransition.swift */,
+			);
+			name = CustomTransitions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,6 +469,8 @@
 				793E8A381EA5B98E00BA3325 /* EasyTransitionController.swift in Sources */,
 				793E8A491EA602B600BA3325 /* EasyStoryboardController.swift in Sources */,
 				79474AAC1EA7702600873736 /* BackgroundTypeController.swift in Sources */,
+				79962C091EA779D70046B631 /* BubbleTransition.swift in Sources */,
+				79962C0B1EA77ED80046B631 /* BubbleController.swift in Sources */,
 				790FE8161EA72FC50040D499 /* StoryboardAlertController.swift in Sources */,
 				790FE8141EA72F9B0040D499 /* SnapKitAlertController.swift in Sources */,
 				793E8A361EA5B7C200BA3325 /* MainController.swift in Sources */,
