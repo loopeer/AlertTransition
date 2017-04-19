@@ -11,7 +11,7 @@ import AlertTransition
 
 class MainController: UITableViewController {
     
-    var titles = ["EasyTransition", "EasyTransition use in Storyboard", "Different Alert Implementation", "BackgroundType", "MenuTransition", "TrolleyTransition", "BubbleTransition"]
+    var titles = ["EasyTransition", "EasyTransition use in Storyboard", "Different Alert Implementation", "BackgroundType", "MenuTransition", "TrolleyTransition", "BubbleTransition", "StarWarsTransition"]
     var menuController = MenuController()
     
     override func viewDidLoad() {
@@ -69,6 +69,13 @@ extension MainController {
             alert.at.transition = transition
             
             present(alert, animated: true, completion: nil)
+        
+        case 7:
+            
+            let alert = NormalAlertController()
+            alert.at.transition = StarWallTransition()
+            present(alert, animated: true, completion: nil)
+            
         default:
             break
         }

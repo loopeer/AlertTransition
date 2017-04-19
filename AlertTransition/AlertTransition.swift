@@ -80,12 +80,12 @@ open class AlertTransition: NSObject {
 // MARK: - UIViewControllerTransitioningDelegate
 
 extension AlertTransition: UIViewControllerTransitioningDelegate {
-    public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    open func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transitionState = .presented
         return self
     }
     
-    public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    open func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transitionState = .dismissed
         return self
     }
@@ -109,11 +109,11 @@ extension AlertTransition: UIViewControllerTransitioningDelegate {
 // MARK: - UIViewControllerAnimatedTransitioning
 
 extension AlertTransition: UIViewControllerAnimatedTransitioning {
-    public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+    open func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return duration
     }
     
-    public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+    open func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         
         transitionContext.toView?.frame = transitionContext.finalFrame(for: toController)
         

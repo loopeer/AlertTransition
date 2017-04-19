@@ -54,4 +54,8 @@ class NormalAlertController: UIViewController, AlertFrameProtocol {
     func buttonClicked(sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
+    
+    deinit {
+        print("---deinit---")
+    }
 }
