@@ -1,4 +1,5 @@
-#AlertTransition
+
+# AlertTransition
 
 ![Xcode 8.2+](https://img.shields.io/badge/Xcode-8.2%2B-blue.svg)
 ![iOS 8.0+](https://img.shields.io/badge/iOS-8.0%2B-blue.svg)
@@ -6,7 +7,7 @@
 
 **AlertTransition** is a extensible library for making view controller transitions, especially for alert transitions. **CocoaPods and Carthage support comming soon.**
 
-##Overview
+## Overview
 
 **AlertTransition** is a super class, make basic structure, and no default animation realized.
 
@@ -47,9 +48,9 @@
  </tr>
 </table>
 
-##AlertTransition
+## AlertTransition
 
-###How To Use
+### How To Use
 
 It is pretty simple to use AlertTransition
 
@@ -80,11 +81,11 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 }
 ```
 
-###Frame of Presented Controller
+### Frame of Presented Controller
 
 How to set the frame of presented controller? Conform to **AlertFrameProtocol** or **Self-sizing**
 
-####AlertFrameProtocol
+#### AlertFrameProtocol
 
 Conforms to AlertFrameProtocol, provide your desired frame through property **alertFrame**
 
@@ -99,7 +100,7 @@ class SomeController: UIViewController, AlertFrameProtocol {
 }
 ```
 
-####Self-sizing
+#### Self-sizing
 
 You need an unbroken chain of constraints and views (with defined heights) to fill the area between the controller view’s top edge and its bottom edge, and you also need one (with defined widths) between the controller view’s left edge and its right edge. If you know how to write [Self-sizing Cell](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/WorkingwithSelf-SizingTableViewCells.html), this will be easy to you.
 
@@ -109,7 +110,7 @@ Sometimes, there maybe constraint conflicts. Among the chain of constraints, pic
 
 You can find demo code in SnapKitAlertController.swift and Main.storyboard.
 
-###Change background
+### Change background
 
 You can change alert background with ***backgroundType***. Effect gif is the second image above. 
 
@@ -127,7 +128,7 @@ alert.at.transition = transition
 present(alert, animated: true, completion: nil)
 ```
 
-##EasyTransition
+## EasyTransition
 
 You can easily compose your custom transition with a enum named **AnimationType**
 
@@ -153,7 +154,7 @@ alert.at.transition = transition
 present(alert, animated: true, completion: nil)
 ```
 
-##Write custom AlertTransition
+## Write custom AlertTransition
 
 In most cases, you only need to override func **performPresentedTransition** and **performDismissedTransition**. Apply your animation to **presentingView** and **presentedView**, such as TrolleyTransition:
 
@@ -226,7 +227,7 @@ public override init(from controller: UIViewController? = nil) {
 
 If you write an amazing custom transition, please submit a pull requests. We looking forward to accumulate custom transitions. And with AlertTransition, we can easily change from one custom transition to another.
 
-##Getting involved
+## Getting involved
 
 * If you **want to contribute** please feel free to **submit pull requests**, even if you find some spell error in README, because I am not good at English.
 * If you **have a feature request** please **open an issue**.
