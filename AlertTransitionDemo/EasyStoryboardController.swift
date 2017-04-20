@@ -16,7 +16,7 @@ class EasyStoryboardController: UITableViewController {
         let controller = segue.destination
         
         let transition = EasyTransition()
-        transition.startTransforms = [.alpha(0), .rotation(angle: 0.75, anchorPoint: CGPoint(x: 0, y: 0)), .scale(0.5), .transition(x: 0, y: 200)]
+        transition.startTransforms = [.alpha(0), .rotation(angle: 0.75, anchorPoint: CGPoint(x: 0, y: 0)), .scale(0.5), .translation(x: 0, y: 200)]
         
         controller.at.transition = transition
     }
@@ -33,8 +33,8 @@ class EasyStoryboardController: UITableViewController {
         
         switch indexPath.row {
         case 0:
-            transition.startTransforms = [.transition(x: 0, y: -100), .alpha(0)]
-            transition.endTransforms = [.transition(x: 0, y: 100), .alpha(0)]
+            transition.startTransforms = [.translation(x: 0, y: -100), .alpha(0)]
+            transition.endTransforms = [.translation(x: 0, y: 100), .alpha(0)]
         case 1:
             transition.startTransforms = [.scale(0.5), .alpha(0)]
         case 2:

@@ -47,7 +47,7 @@ extension BackgroundTypeController {
         let alert = NormalAlertController()
         
         let transition = EasyTransition()
-        transition.startTransforms = [.alpha(0), .rotation(angle: 0.75, anchorPoint: CGPoint(x: 0, y: 0)), .scale(0.5), .transition(x: 0, y: 200)]
+        transition.startTransforms = [.alpha(0), .rotation(angle: 0.75, anchorPoint: CGPoint(x: 0, y: 0)), .scale(0.5), .translation(x: 0, y: 200)]
         
         switch indexPath.row {
         case 0:

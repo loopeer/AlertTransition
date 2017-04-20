@@ -11,7 +11,7 @@ import UIKit
 
 public extension EasyTransition {
     enum AnimationType {
-        case transition(x: CGFloat, y: CGFloat)
+        case translation(x: CGFloat, y: CGFloat)
         case rotation(angle: CGFloat, anchorPoint: CGPoint)
         case scale(CGFloat)
         case alpha(CGFloat)
@@ -19,7 +19,7 @@ public extension EasyTransition {
         func apply(to view: UIView) {
             
             switch self {
-            case .transition(let x, let y):
+            case .translation(let x, let y):
                 view.transform = view.transform.concatenating(CGAffineTransform(translationX: x, y: y))
             case .rotation(let angle, let anchorPoint):
                 let originOffset = CGPoint(x: anchorPoint.x - view.layer.anchorPoint.x, y: anchorPoint.y - view.layer.anchorPoint.y)
@@ -47,7 +47,7 @@ public extension EasyTransition {
 
 public class EasyTransition: AlertTransition {
     /// Set the start state of Alert
-    public var startTransforms: [AnimationType] = [.alpha(0), .transition(x: 0, y: 200)]
+    public var startTransforms: [AnimationType] = [.alpha(0), .translation(x: 0, y: 200)]
     /// Set the end state of Alert
     public var endTransforms: [AnimationType]?
     /// Set the state of view in presentatingController
@@ -76,6 +76,14 @@ public class EasyTransition: AlertTransition {
         super.init(from: controller)
         
         interactionTransitionType = EasyPercentDrivenTransition.self
+    }
+    
+    public override func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+        if transitionState == .presented {
+            return presentAnimateParams.duration
+        } else {
+            return dismissAnimateParams.duration
+        }
     }
     
     public override func performPresentedTransition(presentingView originalView: UIView, presentedView: UIView,context: UIViewControllerContextTransitioning) {

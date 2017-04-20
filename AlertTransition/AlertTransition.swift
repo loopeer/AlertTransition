@@ -90,17 +90,17 @@ extension AlertTransition: UIViewControllerTransitioningDelegate {
         return self
     }
     
-    public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+    open func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
         let presentationController = presentationControllerType.init(presentedViewController: presented, presenting: presenting)
         (presentationController as? PresentationController)?.transition = self
         return presentationController
     }
     
-    public func interactionControllerForPresentation(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+    open func interactionControllerForPresentation(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
         return (interactionTransition?.isTransiting ?? false) ? interactionTransition : nil
     }
     
-    public func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+    open func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
         return (interactionTransition?.isTransiting ?? false) ? interactionTransition : nil
     }
 }

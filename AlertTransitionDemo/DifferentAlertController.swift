@@ -52,7 +52,7 @@ extension DifferentAlertController {
         }
         
         let transition = EasyTransition()
-        transition.startTransforms = [.alpha(0), .rotation(angle: 0.75, anchorPoint: CGPoint(x: 0, y: 0)), .scale(0.5), .transition(x: 0, y: 200)]
+        transition.startTransforms = [.alpha(0), .rotation(angle: 0.75, anchorPoint: CGPoint(x: 0, y: 0)), .scale(0.5), .translation(x: 0, y: 200)]
         alert.at.transition = transition
         
         present(alert, animated: true, completion: nil)
