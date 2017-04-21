@@ -4,8 +4,10 @@
 ![Xcode 8.2+](https://img.shields.io/badge/Xcode-8.2%2B-blue.svg)
 ![iOS 8.0+](https://img.shields.io/badge/iOS-8.0%2B-blue.svg)
 ![Swift 3.0+](https://img.shields.io/badge/Swift-3.0%2B-orange.svg)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Version](https://img.shields.io/cocoapods/v/AlertTransition.svg?style=flat)](https://cocoapods.org/pods/AlertTransition)
 
-**AlertTransition** is a extensible library for making view controller transitions, especially for alert transitions. **CocoaPods and Carthage support comming soon.**
+**AlertTransition** is a extensible library for making view controller transitions, especially for alert transitions. 
 
 ## Overview
 
@@ -233,3 +235,37 @@ If you write an amazing custom transition, please submit a pull requests. We loo
 * If you **have a feature request** please **open an issue**.
 * If you **found a bug** or **need help** please **check older issues before submitting an issue**.
 
+## Installation
+
+### CocoaPods
+
+[CocoaPods](https://cocoapods.org/) is a dependency manager for Cocoa projects.
+
+Specify AlertTransition into your project's Podfile:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+target '<Your App Target>' do
+  pod 'AlertTransition'
+end
+```
+
+Then run the following command:
+
+```sh
+$ pod install
+```
+
+### Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a simple, decentralized
+dependency manager for Cocoa.
+
+Specify AlertTransition into your project's Carthage:
+
+```
+github "loopeer/AlertTransition" ~> 1.0.0
+```
