@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		575B4C71841D978DE405EAAC /* Pods_AlertTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B043D8E060CF5513EAA5F2 /* Pods_AlertTransition.framework */; };
 		790FE7EE1EA60BEB0040D499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790FE7ED1EA60BEB0040D499 /* Main.storyboard */; };
 		790FE8101EA64AFA0040D499 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FE80F1EA64AFA0040D499 /* Extensions.swift */; };
 		790FE8121EA72C120040D499 /* DifferentAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FE8111EA72C120040D499 /* DifferentAlertController.swift */; };
@@ -71,8 +70,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1215930E016B4F5454B04C25 /* Pods-AlertTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTransition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlertTransition/Pods-AlertTransition.debug.xcconfig"; sourceTree = "<group>"; };
-		2A47BBF40FBD0C0E2FD36DE2 /* Pods-AlertTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTransition.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlertTransition/Pods-AlertTransition.release.xcconfig"; sourceTree = "<group>"; };
 		3EAE73D045222165FB810F05 /* Pods-AlertTransitionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTransitionDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlertTransitionDemo/Pods-AlertTransitionDemo.release.xcconfig"; sourceTree = "<group>"; };
 		46D5E80FCCA63971878F53EB /* Pods_AlertTransitionDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlertTransitionDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		790FE7ED1EA60BEB0040D499 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -121,7 +118,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				575B4C71841D978DE405EAAC /* Pods_AlertTransition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +136,6 @@
 		2539B46ED676C34DD8F7E1AB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1215930E016B4F5454B04C25 /* Pods-AlertTransition.debug.xcconfig */,
-				2A47BBF40FBD0C0E2FD36DE2 /* Pods-AlertTransition.release.xcconfig */,
 				C892AFC9C414AC1076F0A085 /* Pods-AlertTransitionDemo.debug.xcconfig */,
 				3EAE73D045222165FB810F05 /* Pods-AlertTransitionDemo.release.xcconfig */,
 			);
@@ -292,12 +286,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 793E8A0A1EA4CFE200BA3325 /* Build configuration list for PBXNativeTarget "AlertTransition" */;
 			buildPhases = (
-				FDC8C717F37C5D0908302658 /* [CP] Check Pods Manifest.lock */,
 				793E89FD1EA4CFE200BA3325 /* Sources */,
 				793E89FE1EA4CFE200BA3325 /* Frameworks */,
 				793E89FF1EA4CFE200BA3325 /* Headers */,
 				793E8A001EA4CFE200BA3325 /* Resources */,
-				FBF6430F342618448D8803F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -436,36 +428,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlertTransitionDemo/Pods-AlertTransitionDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FBF6430F342618448D8803F6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlertTransition/Pods-AlertTransition-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FDC8C717F37C5D0908302658 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -639,7 +601,6 @@
 		};
 		793E8A0B1EA4CFE200BA3325 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1215930E016B4F5454B04C25 /* Pods-AlertTransition.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -662,7 +623,6 @@
 		};
 		793E8A0C1EA4CFE200BA3325 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A47BBF40FBD0C0E2FD36DE2 /* Pods-AlertTransition.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
