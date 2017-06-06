@@ -15,9 +15,13 @@ class EasyPercentDrivenTransition: PercentDrivenInteractiveTransition {
     
     public override func setup(presentedView: UIView) {
         self.presentedView = presentedView
-        let pan = UIPanGestureRecognizer(target: self, action: #selector(dismiss(pan:)))
-        presentedView.addGestureRecognizer(pan)
-        originFrame = presentedView.frame
+        
+        let closeGesture = (transition as? EasyTransition)?.closeGesture ?? false
+        if !closeGesture {
+            let pan = UIPanGestureRecognizer(target: self, action: #selector(dismiss(pan:)))
+            presentedView.addGestureRecognizer(pan)
+            originFrame = presentedView.frame
+        }
     }
     
     override func deviceOrientationChanged() {

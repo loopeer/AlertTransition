@@ -43,6 +43,7 @@ extension EasyTransitionController {
         switch indexPath.row {
         case 0:
             transition.startTransforms = [.translation(x: 0, y: 500)]
+            transition.closeGesture = true
         case 1:
             transition.startTransforms = [.rotation(angle: CGFloat(Double.pi/2), anchorPoint: CGPoint(x: 0, y: 0))]
         case 2:

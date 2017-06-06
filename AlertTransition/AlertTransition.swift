@@ -72,8 +72,12 @@ open class AlertTransition: NSObject {
     // MARK: - Methods should override by subclass
     
     /// Called in animateTransition(using transitionContext:),  when animation completed don’t forget to add `context.completeTransition(true/false)`
-    open func performPresentedTransition(presentingView: UIView, presentedView: UIView,context: UIViewControllerContextTransitioning) { }
-    open func performDismissedTransition(presentingView: UIView, presentedView: UIView,context: UIViewControllerContextTransitioning) { }
+    open func performPresentedTransition(presentingView: UIView, presentedView: UIView,context: UIViewControllerContextTransitioning) {
+//        context.containerView.
+    }
+    open func performDismissedTransition(presentingView: UIView, presentedView: UIView,context: UIViewControllerContextTransitioning) {
+    
+    }
 }
 
 

@@ -56,6 +56,8 @@ public class EasyTransition: AlertTransition {
     public var presentAnimateParams = AnimateParams()
     /// Set the spring animation params in dismiss
     public var dismissAnimateParams = AnimateParams()
+    
+    public var closeGesture = false
 
     public var disableGestureDismiss = false {
         didSet {

@@ -38,9 +38,19 @@ open class PresentationController: UIPresentationController {
         deviceOrientation = UIDevice.current.orientation
     }
     
+    open override func dismissalTransitionWillBegin() {
+        UIView.animate(withDuration: transition!.duration) { 
+            self.hideMaskView()
+        }
+    }
+    
     override open func containerViewWillLayoutSubviews() {
         if let view = maskView, view.superview == nil {
             containerView?.insertSubview(view, at: 0)
+            
+            UIView.animate(withDuration: transition!.duration, animations: { 
+                self.showMaskView()
+            })
         }
         
         guard deviceOrientation != UIDevice.current.orientation else { return }
@@ -52,22 +62,35 @@ open class PresentationController: UIPresentationController {
         transition?.interactionTransition?.deviceOrientationChanged()
     }
     
+    /// called in animate block, when presenting
+    open func showMaskView() {
+        switch transition!.backgroundType {
+        case .color(_):
+            maskView?.alpha = 1
+        case .blurEffect(_, let alpha):
+            maskView?.alpha = alpha
+        }
+    }
+    
+    /// called in animate block, when dismiss
+    open func hideMaskView() {
+        maskView?.alpha = 0
+    }
+    
     /// Override this method to make custom MaskView
     open func makeMaskView() -> UIView {
         var mask: UIView
         
         switch transition!.backgroundType {
         case .color(let color):
-            
             mask = UIView()
             mask.backgroundColor = color
-        case .blurEffect(let style, let alpha):
-            
+        case .blurEffect(let style, _):
             mask = UIVisualEffectView(effect: UIBlurEffect(style: style))
-            mask.alpha = alpha
         }
         
         mask.frame = UIScreen.main.bounds
+        mask.alpha = 0
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(close))
         mask.addGestureRecognizer(tap)
