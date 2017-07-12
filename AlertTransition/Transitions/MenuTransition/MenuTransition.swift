@@ -10,7 +10,12 @@ import UIKit
 
 public class MenuTransition: AlertTransition {
 
-    var maskView: UIView?
+    var menuMaskView: UIView?
+    public override var maskView: UIView? {
+        didSet {
+            menuMaskView = maskView
+        }
+    }
     
     public override init(from controller: UIViewController?) {
         super.init(from: controller)

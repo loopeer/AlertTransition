@@ -34,6 +34,7 @@ open class PresentationController: UIPresentationController {
         containerView?.addSubview(presentedView!)
         if maskView == nil {
             maskView = makeMaskView()
+            transition?.maskView = maskView
         }
         deviceOrientation = UIDevice.current.orientation
     }

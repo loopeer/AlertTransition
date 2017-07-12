@@ -39,6 +39,7 @@ open class AlertTransition: NSObject {
     /// If this property is YES, the alert will dismiss when you click on outside
     public var shouldDismissOutside = true
     
+    public internal(set) weak var maskView: UIView?
     
     // MARK: - for subclass
     
