@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "AlertTransition"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.license      = "MIT"
   s.summary      = "AlertTransition is a extensible library for making view controller transitions, especially for alert transitions."
 
