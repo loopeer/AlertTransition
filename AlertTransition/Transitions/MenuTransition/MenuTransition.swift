@@ -20,13 +20,8 @@ public class MenuTransition: AlertTransition {
     public override func performPresentedTransition(presentingView: UIView, presentedView: UIView, context: UIViewControllerContextTransitioning) {
         
         if forgroundMask == nil {
-            UIGraphicsBeginImageContextWithOptions(UIScreen.main.bounds.size, true, UIScreen.main.scale)
-            presentingView.layer.render(in: UIGraphicsGetCurrentContext()!)
-            let image = UIGraphicsGetImageFromCurrentImageContext()
-            UIGraphicsEndImageContext()
             
             forgroundMask = UIView(frame: presentingView.bounds)
-            forgroundMask?.layer.contents = image?.cgImage
             
             if let percentDrivenTransition = interactionTransition as? MenuPercentDrivenTransition {
                 percentDrivenTransition.setupDismissView(view: forgroundMask!)
@@ -35,8 +30,14 @@ public class MenuTransition: AlertTransition {
             let tap = UITapGestureRecognizer(target: self, action: #selector(maskTapped(tap:)))
             forgroundMask?.addGestureRecognizer(tap)
         }
-        context.containerView.addSubview(forgroundMask!)
         
+        UIGraphicsBeginImageContextWithOptions(UIScreen.main.bounds.size, true, UIScreen.main.scale)
+        presentingView.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        forgroundMask?.layer.contents = image?.cgImage
+        
+        context.containerView.addSubview(forgroundMask!)
         presentedView.frame.origin.x = -presentedView.frame.width / 2
         
         UIView.animate(withDuration: duration, delay: 0, options: [.curveLinear], animations: {
