@@ -10,12 +10,7 @@ import UIKit
 
 public class MenuTransition: AlertTransition {
 
-    var menuMaskView: UIView?
-    public override var maskView: UIView? {
-        didSet {
-            menuMaskView = maskView
-        }
-    }
+    public internal(set) var forgroundMask: UIView?
     
     public override init(from controller: UIViewController?) {
         super.init(from: controller)
@@ -24,26 +19,29 @@ public class MenuTransition: AlertTransition {
     
     public override func performPresentedTransition(presentingView: UIView, presentedView: UIView, context: UIViewControllerContextTransitioning) {
         
-        if maskView == nil {
+        if forgroundMask == nil {
             UIGraphicsBeginImageContextWithOptions(UIScreen.main.bounds.size, true, UIScreen.main.scale)
             presentingView.layer.render(in: UIGraphicsGetCurrentContext()!)
             let image = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
             
-            maskView = UIView(frame: presentingView.bounds)
-            maskView?.layer.contents = image?.cgImage
+            forgroundMask = UIView(frame: presentingView.bounds)
+            forgroundMask?.layer.contents = image?.cgImage
             
             if let percentDrivenTransition = interactionTransition as? MenuPercentDrivenTransition {
-                percentDrivenTransition.setupDismissView(view: maskView!)
+                percentDrivenTransition.setupDismissView(view: forgroundMask!)
             }
+            
+            let tap = UITapGestureRecognizer(target: self, action: #selector(maskTapped(tap:)))
+            forgroundMask?.addGestureRecognizer(tap)
         }
-        context.containerView.addSubview(maskView!)
+        context.containerView.addSubview(forgroundMask!)
         
         presentedView.frame.origin.x = -presentedView.frame.width / 2
         
         UIView.animate(withDuration: duration, delay: 0, options: [.curveLinear], animations: {
             presentedView.transform = CGAffineTransform(translationX: presentedView.frame.width / 2, y: 0)
-            self.maskView?.transform = CGAffineTransform(translationX: presentedView.frame.width, y: 0)
+            self.forgroundMask?.transform = CGAffineTransform(translationX: presentedView.frame.width, y: 0)
         }) { (complete) in
             if context.transitionWasCancelled {
                 context.completeTransition(false)
@@ -57,7 +55,7 @@ public class MenuTransition: AlertTransition {
         
         UIView.animate(withDuration: duration, delay: 0, options: [.curveLinear], animations: {
             presentedView.transform = CGAffineTransform.identity
-            self.maskView?.transform = CGAffineTransform.identity
+            self.forgroundMask?.transform = CGAffineTransform.identity
         }) { (complete) in
             if context.transitionWasCancelled {
                 context.completeTransition(false)
@@ -65,5 +63,11 @@ public class MenuTransition: AlertTransition {
                 context.completeTransition(complete)
             }
         }
+    }
+    
+    func maskTapped(tap: UITapGestureRecognizer) {
+        guard shouldDismissOutside else { return }
+        
+        fromController?.dismiss(animated: true, completion: nil)
     }
 }
