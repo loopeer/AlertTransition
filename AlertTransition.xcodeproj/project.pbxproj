@@ -17,8 +17,6 @@
 		793E8A141EA4D11200BA3325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A131EA4D11200BA3325 /* AppDelegate.swift */; };
 		793E8A1B1EA4D11200BA3325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793E8A1A1EA4D11200BA3325 /* Assets.xcassets */; };
 		793E8A1E1EA4D11200BA3325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793E8A1C1EA4D11200BA3325 /* LaunchScreen.storyboard */; };
-		793E8A231EA4D13500BA3325 /* AlertTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 793E8A021EA4CFE200BA3325 /* AlertTransition.framework */; };
-		793E8A241EA4D13500BA3325 /* AlertTransition.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 793E8A021EA4CFE200BA3325 /* AlertTransition.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		793E8A291EA4D28700BA3325 /* AlertTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A281EA4D28700BA3325 /* AlertTransition.swift */; };
 		793E8A2B1EA4D36A00BA3325 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A2A1EA4D36A00BA3325 /* PresentationController.swift */; };
 		793E8A2D1EA4D39100BA3325 /* PercentDrivenInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A2C1EA4D39100BA3325 /* PercentDrivenInteractiveTransition.swift */; };
@@ -44,30 +42,6 @@
 		79962C1B1EA7906D0046B631 /* ViewTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79962C161EA7906D0046B631 /* ViewTexture.swift */; };
 		FF864D92FE4ED8E188B7118C /* Pods_AlertTransitionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D5E80FCCA63971878F53EB /* Pods_AlertTransitionDemo.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		793E8A251EA4D13500BA3325 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 793E89F91EA4CFE200BA3325 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 793E8A011EA4CFE200BA3325;
-			remoteInfo = AlertTransition;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		793E8A271EA4D13500BA3325 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				793E8A241EA4D13500BA3325 /* AlertTransition.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3EAE73D045222165FB810F05 /* Pods-AlertTransitionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTransitionDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlertTransitionDemo/Pods-AlertTransitionDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,7 +99,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				793E8A231EA4D13500BA3325 /* AlertTransition.framework in Frameworks */,
 				FF864D92FE4ED8E188B7118C /* Pods_AlertTransitionDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,14 +281,12 @@
 				793E8A0D1EA4D11200BA3325 /* Sources */,
 				793E8A0E1EA4D11200BA3325 /* Frameworks */,
 				793E8A0F1EA4D11200BA3325 /* Resources */,
-				793E8A271EA4D13500BA3325 /* Embed Frameworks */,
 				E5607C9777414F27DAEBC417 /* [CP] Embed Pods Frameworks */,
 				C40D1F90111075EAE56D68B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				793E8A261EA4D13500BA3325 /* PBXTargetDependency */,
 			);
 			name = AlertTransitionDemo;
 			productName = AlertTransitionDemo;
@@ -335,7 +306,7 @@
 					793E8A011EA4CFE200BA3325 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = VS86A5N9W7;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					793E8A101EA4D11200BA3325 = {
@@ -478,14 +449,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		793E8A261EA4D13500BA3325 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 793E8A011EA4CFE200BA3325 /* AlertTransition */;
-			targetProxy = 793E8A251EA4D13500BA3325 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		793E8A1C1EA4D11200BA3325 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -617,7 +580,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -638,7 +602,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.loopeer.AlertTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -646,7 +611,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C892AFC9C414AC1076F0A085 /* Pods-AlertTransitionDemo.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VS86A5N9W7;
 				INFOPLIST_FILE = AlertTransitionDemo/Info.plist;
@@ -654,7 +618,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loopeer.AlertTransitionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -662,7 +626,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3EAE73D045222165FB810F05 /* Pods-AlertTransitionDemo.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VS86A5N9W7;
 				INFOPLIST_FILE = AlertTransitionDemo/Info.plist;
@@ -670,7 +633,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loopeer.AlertTransitionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

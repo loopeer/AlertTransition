@@ -26,7 +26,7 @@ class MenuPercentDrivenTransition: PercentDrivenInteractiveTransition {
         view.addGestureRecognizer(pan)
     }
     
-    func presentPan(pan: UIPanGestureRecognizer) {
+    @objc func presentPan(pan: UIPanGestureRecognizer) {
         let offset = pan.translation(in: pan.view?.superview).x
         let persent = offset / transitionWidth
         
@@ -56,7 +56,7 @@ class MenuPercentDrivenTransition: PercentDrivenInteractiveTransition {
         }
     }
     
-    func dismissPan(pan: UIPanGestureRecognizer) {
+    @objc func dismissPan(pan: UIPanGestureRecognizer) {
         let offset = -pan.translation(in: pan.view?.superview).x
         let persent = offset / transitionWidth
         

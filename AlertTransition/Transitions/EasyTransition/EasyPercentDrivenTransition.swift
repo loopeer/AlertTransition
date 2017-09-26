@@ -28,7 +28,7 @@ class EasyPercentDrivenTransition: PercentDrivenInteractiveTransition {
         originFrame = presentedView?.frame ?? CGRect.zero
     }
     
-    func dismiss(pan: UIPanGestureRecognizer) {
+    @objc func dismiss(pan: UIPanGestureRecognizer) {
         let point = pan.translation(in: pan.view?.superview)
         
         switch pan.state {

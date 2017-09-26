@@ -66,7 +66,7 @@ public class MenuTransition: AlertTransition {
         }
     }
     
-    func maskTapped(tap: UITapGestureRecognizer) {
+    @objc func maskTapped(tap: UITapGestureRecognizer) {
         guard shouldDismissOutside else { return }
         
         fromController?.dismiss(animated: true, completion: nil)

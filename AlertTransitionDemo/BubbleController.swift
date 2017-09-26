@@ -40,7 +40,7 @@ class BubbleController: UIViewController, AlertFrameProtocol {
         view.addSubview(dismissButton)
     }
     
-    func buttonClicked(sender: UIButton) {
+    @objc func buttonClicked(sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
 }

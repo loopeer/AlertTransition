@@ -51,7 +51,7 @@ class NormalAlertController: UIViewController, AlertFrameProtocol {
         view.addSubview(button)
     }
     
-    func buttonClicked(sender: UIButton) {
+    @objc func buttonClicked(sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     
