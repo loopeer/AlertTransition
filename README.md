@@ -4,6 +4,7 @@
 ![Xcode 8.2+](https://img.shields.io/badge/Xcode-8.2%2B-blue.svg)
 ![iOS 8.0+](https://img.shields.io/badge/iOS-8.0%2B-blue.svg)
 ![Swift 3.0+](https://img.shields.io/badge/Swift-3.0%2B-orange.svg)
+![Swift 4](https://img.shields.io/badge/Swift-4-orange.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/AlertTransition.svg?style=flat)](https://cocoapods.org/pods/AlertTransition)
 
@@ -270,5 +271,5 @@ dependency manager for Cocoa.
 Specify AlertTransition into your project's Carthage:
 
 ```
-github "loopeer/AlertTransition" ~> 1.0.0
+github "loopeer/AlertTransition" ~> 2.0.0
 ```
