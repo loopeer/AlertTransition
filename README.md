@@ -249,7 +249,10 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your App Target>' do
-  pod 'AlertTransition'
+  #Swift3
+  #pod 'AlertTransition', "~> 1.0.4"
+  #Swift4
+  pod 'AlertTransition', "~> 2.0.0"
 end
 ```
 
