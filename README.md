@@ -14,7 +14,7 @@
 
 **AlertTransition** is a super class, make basic structure, and no default animation realized.
 
-**EasyTransition** is a subclass of **AlertTransition**, with it, you can compose custom transition with translation, scale, rotation and alpha. You can also change background with custom color or UIBlurEffect. It support changing device orientation. And it is easy to use both in code or storyboard.
+**EasyTransition** is a subclass of **AlertTransition**. with it, you can compose custom transition with translation, scale, rotation and alpha. You can also change background with custom color or UIBlurEffect. It support changing device orientation. And it is easy to use both in code or storyboard.
 
 <table>
  <tr>
@@ -30,17 +30,17 @@
  </tr>
 </table>
 
-***You can subclass AlertTransition, and write your custom transition***. Here are some custom transitions, like MenuTransition, TrolleyTransition. And you can also wrap other transition effect with AlertTransition, such as [BubbleTransition](https://github.com/andreamazz/BubbleTransition) or [StarWars.iOS](https://github.com/Yalantis/StarWars.iOS). 
+**MenuTransition** is a subclass of **AlertTransition**. With it, you can make a side menu with a few line of codes.
+
+<img src="Media/MenuTransition.gif" width="320"/>
+
+**TrolleyTransition** is a subclass of **AlertTransition**. With it, you can make a trolley with a few line of codes.
+
+<img src="Media/TrolleyTransition.gif" width="320"/>
+
+***You can subclass AlertTransition, and write your custom transition***. And you can also wrap other transition effect with AlertTransition, such as [BubbleTransition](https://github.com/andreamazz/BubbleTransition) or [StarWars.iOS](https://github.com/Yalantis/StarWars.iOS). 
 
 <table>
- <tr>
-  <td>
-    <img src="Media/MenuTransition.gif" width="300"/>
-  </td>
-  <td>
-    <img src="Media/TrolleyTransition.gif" width="300"/>
-  </td>
- </tr>
  <tr>
   <td>
     <img src="Media/BubbleTransition.gif" width="300"/>
@@ -157,6 +157,32 @@ alert.at.transition = transition
 present(alert, animated: true, completion: nil)
 ```
 
+## MenuTransition
+
+There are only three steps to make a side menu. Set frame and change background just like other *AlertTransition*.
+
+```swift
+class MainController: UIViewController {
+    // First, hold your menu controller in your main controller
+    var menuController = MenuController()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // second, initialize MenuTransition with presenting controller
+        let transition = MenuTransition(from: navigationController)
+        // third, set MenuTransition to your menuController
+        menuController.at.transition = transition
+    }
+}
+```
+
+When you select an item at side menu, you want to push a controller from main controller. Push like this to make suitable animation.
+
+```swift
+(self.at.transition as? MenuTransition)?.push(controller: NextViewController())
+```
+
 ## Write custom AlertTransition
 
 In most cases, you only need to override func **performPresentedTransition** and **performDismissedTransition**. Apply your animation to **presentingView** and **presentedView**, such as TrolleyTransition:
@@ -253,8 +279,16 @@ target '<Your App Target>' do
   #Swift3
   #pod 'AlertTransition', "~> 1.0.4"
   #Swift4
-  pod 'AlertTransition', "~> 2.0.0"
+  pod 'AlertTransition', "~> 2.1.0"
 end
+```
+
+If you only want EasyTransition, MenuTransition or TrolleyTransition, you can pod them alone like this:
+
+```ruby
+pod 'AlertTransition/Easy', "~> 2.1.0"
+pod 'AlertTransition/Menu', "~> 2.1.0"
+pod 'AlertTransition/Trolley', "~> 2.1.0"
 ```
 
 Then run the following command:
@@ -271,5 +305,5 @@ dependency manager for Cocoa.
 Specify AlertTransition into your project's Carthage:
 
 ```
-github "loopeer/AlertTransition" ~> 2.0.0
+github "loopeer/AlertTransition" ~> 2.1.0
 ```
