@@ -48,6 +48,7 @@ open class AlertTransition: NSObject {
     public var presentationControllerType: UIPresentationController.Type = PresentationController.self
     /// The InteractionTransition initialize from interactionTransitionType at suitable time
     public internal(set) var interactionTransition: PercentDrivenInteractiveTransition?
+    public internal(set) var presentationController: PresentationController?
     
     /// The alert controller
     public internal(set) weak var toController: UIViewController!
@@ -96,8 +97,11 @@ extension AlertTransition: UIViewControllerTransitioningDelegate {
     }
     
     open func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        let presentationController = presentationControllerType.init(presentedViewController: presented, presenting: presenting)
-        (presentationController as? PresentationController)?.transition = self
+        let presentationController: UIPresentationController = presentationControllerType.init(presentedViewController: presented, presenting: presenting)
+        if let controller = presentationController as? PresentationController {
+            controller.transition = self
+            self.presentationController = controller
+        }
         return presentationController
     }
     

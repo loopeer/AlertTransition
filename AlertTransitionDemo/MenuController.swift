@@ -9,6 +9,7 @@
 import UIKit
 import AlertTransition
 
+
 class MenuController: UIViewController, AlertFrameProtocol {
     
     var alertFrame: CGRect {
@@ -16,9 +17,17 @@ class MenuController: UIViewController, AlertFrameProtocol {
         return CGRect(x: 0, y: 0, width: width, height: UIScreen.main.bounds.size.height)
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.layer.contents = #imageLiteral(resourceName: "menu_background").cgImage
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(viewDidTapped(tap:)))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func viewDidTapped(tap: UITapGestureRecognizer) {
+        (self.at.transition as? MenuTransition)?.push(controller: NextViewController())
     }
 }

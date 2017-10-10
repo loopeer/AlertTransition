@@ -10,42 +10,37 @@ import UIKit
 
 public class MenuTransition: AlertTransition {
 
-    public internal(set) var forgroundMask: UIView?
+    public internal(set) var originSuperView: UIView?
     
     public override init(from controller: UIViewController?) {
         super.init(from: controller)
         interactionTransitionType = MenuPercentDrivenTransition.self
+        backgroundType = .color(.clear)
     }
     
     public override func performPresentedTransition(presentingView: UIView, presentedView: UIView, context: UIViewControllerContextTransitioning) {
+        presentationController?.manualMaskAnimation = true
+        originSuperView = presentingView.superview
+        context.containerView.addSubview(presentingView)
+        context.containerView.addSubview(maskView!)
+        (interactionTransition as? MenuPercentDrivenTransition)?.setupDismissView(view: maskView!)
         
-        if forgroundMask == nil {
-            
-            forgroundMask = UIView(frame: presentingView.bounds)
-            
-            if let percentDrivenTransition = interactionTransition as? MenuPercentDrivenTransition {
-                percentDrivenTransition.setupDismissView(view: forgroundMask!)
-            }
-            
-            let tap = UITapGestureRecognizer(target: self, action: #selector(maskTapped(tap:)))
-            forgroundMask?.addGestureRecognizer(tap)
-        }
-        
-        UIGraphicsBeginImageContextWithOptions(UIScreen.main.bounds.size, true, UIScreen.main.scale)
-        presentingView.layer.render(in: UIGraphicsGetCurrentContext()!)
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        forgroundMask?.layer.contents = image?.cgImage
-        
-        context.containerView.addSubview(forgroundMask!)
         presentedView.frame.origin.x = -presentedView.frame.width / 2
+        presentingView.frame.origin.x = 0
+        maskView?.frame = presentingView.frame
         
-        UIView.animate(withDuration: duration, delay: 0, options: [.curveLinear], animations: {
+        // HACK: If zero, the animation briefly flashes in iOS 11. UIViewPropertyAnimators (iOS 10+) may resolve this.
+        let delay = (interactionTransition?.isTransiting ?? false) ? duration : 0
+        
+        UIView.animate(withDuration: duration, delay: delay, options: [.curveLinear], animations: {
             presentedView.transform = CGAffineTransform(translationX: presentedView.frame.width / 2, y: 0)
-            self.forgroundMask?.transform = CGAffineTransform(translationX: presentedView.frame.width, y: 0)
+            presentingView.frame.origin.x = presentedView.frame.width
+            self.maskView?.frame = presentingView.frame
+            self.presentationController?.showMaskView()
         }) { (complete) in
             if context.transitionWasCancelled {
                 context.completeTransition(false)
+                self.originSuperView?.addSubview(presentingView)
             }else{
                 context.completeTransition(complete)
             }
@@ -54,21 +49,39 @@ public class MenuTransition: AlertTransition {
     
     public override func performDismissedTransition(presentingView: UIView, presentedView: UIView, context: UIViewControllerContextTransitioning) {
         
-        UIView.animate(withDuration: duration, delay: 0, options: [.curveLinear], animations: {
-            presentedView.transform = CGAffineTransform.identity
-            self.forgroundMask?.transform = CGAffineTransform.identity
+        // HACK: If zero, the animation briefly flashes in iOS 11. UIViewPropertyAnimators (iOS 10+) may resolve this.
+        let delay = (interactionTransition?.isTransiting ?? false) ? duration : 0
+        
+        UIView.animate(withDuration: duration, delay: delay, options: [.curveLinear], animations: {
+            self.dismissActions()
         }) { (complete) in
             if context.transitionWasCancelled {
                 context.completeTransition(false)
             }else{
                 context.completeTransition(complete)
+                self.originSuperView?.addSubview(presentingView)
             }
         }
     }
     
-    @objc func maskTapped(tap: UITapGestureRecognizer) {
-        guard shouldDismissOutside else { return }
+    public func dismissActions() {
+        toController.view.transform = CGAffineTransform.identity
+        fromController?.view.frame.origin.x = 0
+        self.maskView?.frame = fromController?.view.frame ?? CGRect.zero
+        self.presentationController?.hideMaskView()
+    }
+    
+    public func push(controller: UIViewController, from navi: UINavigationController? = nil) {
+        guard let naviController = navi ?? (fromController as? UINavigationController) else { return }
         
-        fromController?.dismiss(animated: true, completion: nil)
+        CATransaction.begin()
+        CATransaction.setCompletionBlock( { () -> Void in
+            self.toController.dismiss(animated: true, completion: nil)
+        })
+        UIView.animate(withDuration: duration, animations: { () -> Void in
+            self.dismissActions()
+        })
+        naviController.pushViewController(controller, animated: true)
+        CATransaction.commit()
     }
 }

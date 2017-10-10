@@ -12,6 +12,7 @@
 		790FE8121EA72C120040D499 /* DifferentAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FE8111EA72C120040D499 /* DifferentAlertController.swift */; };
 		790FE8141EA72F9B0040D499 /* SnapKitAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FE8131EA72F9B0040D499 /* SnapKitAlertController.swift */; };
 		790FE8161EA72FC50040D499 /* StoryboardAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FE8151EA72FC50040D499 /* StoryboardAlertController.swift */; };
+		791B384E1F8CAC1500D6C0E1 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791B384D1F8CAC1500D6C0E1 /* NextViewController.swift */; };
 		7938B22C1EA75A8500F2D71B /* MenuPercentDrivenTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938B22B1EA75A8500F2D71B /* MenuPercentDrivenTransition.swift */; };
 		793E8A071EA4CFE200BA3325 /* AlertTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 793E8A051EA4CFE200BA3325 /* AlertTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		793E8A141EA4D11200BA3325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A131EA4D11200BA3325 /* AppDelegate.swift */; };
@@ -51,6 +52,7 @@
 		790FE8111EA72C120040D499 /* DifferentAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DifferentAlertController.swift; sourceTree = "<group>"; };
 		790FE8131EA72F9B0040D499 /* SnapKitAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapKitAlertController.swift; path = Alerts/SnapKitAlertController.swift; sourceTree = "<group>"; };
 		790FE8151EA72FC50040D499 /* StoryboardAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardAlertController.swift; path = Alerts/StoryboardAlertController.swift; sourceTree = "<group>"; };
+		791B384D1F8CAC1500D6C0E1 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		7938B22B1EA75A8500F2D71B /* MenuPercentDrivenTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuPercentDrivenTransition.swift; path = Transitions/MenuTransition/MenuPercentDrivenTransition.swift; sourceTree = "<group>"; };
 		793E8A021EA4CFE200BA3325 /* AlertTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlertTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		793E8A051EA4CFE200BA3325 /* AlertTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertTransition.h; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				79474AA91EA764EC00873736 /* TrolleyController.swift */,
 				79474AAB1EA7702600873736 /* BackgroundTypeController.swift */,
 				79962C0A1EA77ED80046B631 /* BubbleController.swift */,
+				791B384D1F8CAC1500D6C0E1 /* NextViewController.swift */,
 			);
 			path = AlertTransitionDemo;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79474AA61EA75E7100873736 /* MenuController.swift in Sources */,
+				791B384E1F8CAC1500D6C0E1 /* NextViewController.swift in Sources */,
 				793E8A381EA5B98E00BA3325 /* EasyTransitionController.swift in Sources */,
 				793E8A491EA602B600BA3325 /* EasyStoryboardController.swift in Sources */,
 				79962C181EA7906D0046B631 /* SpriteRender.swift in Sources */,

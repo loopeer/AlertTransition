@@ -20,9 +20,17 @@ class MainController: UITableViewController {
         title = "AlertTransition"
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.description())
-        tableView.tableFooterView = UIView()
+        
+        let promptLabel = UILabel()
+        promptLabel.font = UIFont.systemFont(ofSize: 14)
+        promptLabel.textColor = UIColor.lightText
+        promptLabel.text = "← Swipe Screen Edges in View"
+        promptLabel.sizeToFit()
+        promptLabel.backgroundColor = .red
+        tableView.tableFooterView = promptLabel
         
         let transition = MenuTransition(from: navigationController)
+        transition.backgroundType = .color(UIColor.black.withAlphaComponent(0.5))
         menuController.at.transition = transition
     }
 }

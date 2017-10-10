@@ -16,6 +16,9 @@ open class PresentationController: UIPresentationController {
     /// The background view, initialized when presentationTransitionWillBegin, inserted to view hierarchy when containerViewWillLayoutSubviews
     public fileprivate(set) var maskView: UIView?
     
+    /// Call showMaskView()、hideMaskView() manually, Usually when PercentDrivenInteractiveTransition
+    public var manualMaskAnimation = false
+    
     private var deviceOrientation = UIDeviceOrientation.portrait
     
     open override var frameOfPresentedViewInContainerView: CGRect {
@@ -40,13 +43,14 @@ open class PresentationController: UIPresentationController {
     }
     
     open override func dismissalTransitionWillBegin() {
+        guard !manualMaskAnimation else { return }
         UIView.animate(withDuration: transition!.duration) { 
             self.hideMaskView()
         }
     }
     
     override open func containerViewWillLayoutSubviews() {
-        if let view = maskView, view.superview == nil {
+        if let view = maskView, view.superview == nil, !manualMaskAnimation {
             containerView?.insertSubview(view, at: 0)
             
             UIView.animate(withDuration: transition!.duration, animations: { 
