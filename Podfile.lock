@@ -1,9 +1,17 @@
 PODS:
-  - AlertTransition (2.0.0)
+  - AlertTransition/Core (2.1.0)
+  - AlertTransition/Easy (2.1.0):
+    - AlertTransition/Core
+  - AlertTransition/Menu (2.1.0):
+    - AlertTransition/Core
+  - AlertTransition/Trolley (2.1.0):
+    - AlertTransition/Core
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
-  - AlertTransition (from `.`)
+  - AlertTransition/Easy (from `.`)
+  - AlertTransition/Menu (from `.`)
+  - AlertTransition/Trolley (from `.`)
   - SnapKit (~> 4.0.0)
 
 EXTERNAL SOURCES:
@@ -11,9 +19,9 @@ EXTERNAL SOURCES:
     :path: .
 
 SPEC CHECKSUMS:
-  AlertTransition: 86849cd1fa4d080b2dde7e0cff24e6e3f41fd5a4
+  AlertTransition: 228ab96e7fd52a99ef92b74ce18d924a457b0594
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 11e37085216f73d8848bb442c9135ee93967e645
+PODFILE CHECKSUM: 8c409f68cedfa091490114bbb09309d1c6e8fa1a
 
 COCOAPODS: 1.2.1

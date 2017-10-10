@@ -6,6 +6,8 @@ target 'AlertTransitionDemo' do
   use_frameworks!
 
 pod 'SnapKit', '~> 4.0.0'
-pod 'AlertTransition', path: '.'
+pod 'AlertTransition/Easy', path: '.'
+pod 'AlertTransition/Menu', path: '.'
+pod 'AlertTransition/Trolley', path: '.'
 
 end
