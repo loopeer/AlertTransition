@@ -13,24 +13,14 @@
 		790FE8141EA72F9B0040D499 /* SnapKitAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FE8131EA72F9B0040D499 /* SnapKitAlertController.swift */; };
 		790FE8161EA72FC50040D499 /* StoryboardAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FE8151EA72FC50040D499 /* StoryboardAlertController.swift */; };
 		791B384E1F8CAC1500D6C0E1 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791B384D1F8CAC1500D6C0E1 /* NextViewController.swift */; };
-		7938B22C1EA75A8500F2D71B /* MenuPercentDrivenTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938B22B1EA75A8500F2D71B /* MenuPercentDrivenTransition.swift */; };
-		793E8A071EA4CFE200BA3325 /* AlertTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 793E8A051EA4CFE200BA3325 /* AlertTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		793E8A141EA4D11200BA3325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A131EA4D11200BA3325 /* AppDelegate.swift */; };
 		793E8A1B1EA4D11200BA3325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793E8A1A1EA4D11200BA3325 /* Assets.xcassets */; };
 		793E8A1E1EA4D11200BA3325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793E8A1C1EA4D11200BA3325 /* LaunchScreen.storyboard */; };
-		793E8A291EA4D28700BA3325 /* AlertTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A281EA4D28700BA3325 /* AlertTransition.swift */; };
-		793E8A2B1EA4D36A00BA3325 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A2A1EA4D36A00BA3325 /* PresentationController.swift */; };
-		793E8A2D1EA4D39100BA3325 /* PercentDrivenInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A2C1EA4D39100BA3325 /* PercentDrivenInteractiveTransition.swift */; };
-		793E8A2F1EA4D3D400BA3325 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A2E1EA4D3D400BA3325 /* Extensions.swift */; };
 		793E8A361EA5B7C200BA3325 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A351EA5B7C200BA3325 /* MainController.swift */; };
 		793E8A381EA5B98E00BA3325 /* EasyTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A371EA5B98E00BA3325 /* EasyTransitionController.swift */; };
 		793E8A3B1EA5BC5C00BA3325 /* NormalAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A3A1EA5BC5C00BA3325 /* NormalAlertController.swift */; };
-		793E8A441EA5FCF600BA3325 /* EasyPercentDrivenTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A421EA5FCF600BA3325 /* EasyPercentDrivenTransition.swift */; };
-		793E8A451EA5FCF600BA3325 /* EasyTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A431EA5FCF600BA3325 /* EasyTransition.swift */; };
 		793E8A491EA602B600BA3325 /* EasyStoryboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E8A481EA602B600BA3325 /* EasyStoryboardController.swift */; };
-		79474AA41EA75C6800873736 /* MenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79474AA31EA75C6800873736 /* MenuTransition.swift */; };
 		79474AA61EA75E7100873736 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79474AA51EA75E7100873736 /* MenuController.swift */; };
-		79474AA81EA7643100873736 /* TrolleyTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79474AA71EA7643100873736 /* TrolleyTransition.swift */; };
 		79474AAA1EA764EC00873736 /* TrolleyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79474AA91EA764EC00873736 /* TrolleyController.swift */; };
 		79474AAC1EA7702600873736 /* BackgroundTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79474AAB1EA7702600873736 /* BackgroundTypeController.swift */; };
 		79962C091EA779D70046B631 /* BubbleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79962C081EA779D70046B631 /* BubbleTransition.swift */; };
@@ -53,28 +43,16 @@
 		790FE8131EA72F9B0040D499 /* SnapKitAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapKitAlertController.swift; path = Alerts/SnapKitAlertController.swift; sourceTree = "<group>"; };
 		790FE8151EA72FC50040D499 /* StoryboardAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardAlertController.swift; path = Alerts/StoryboardAlertController.swift; sourceTree = "<group>"; };
 		791B384D1F8CAC1500D6C0E1 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
-		7938B22B1EA75A8500F2D71B /* MenuPercentDrivenTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuPercentDrivenTransition.swift; path = Transitions/MenuTransition/MenuPercentDrivenTransition.swift; sourceTree = "<group>"; };
-		793E8A021EA4CFE200BA3325 /* AlertTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlertTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		793E8A051EA4CFE200BA3325 /* AlertTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertTransition.h; sourceTree = "<group>"; };
-		793E8A061EA4CFE200BA3325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		793E8A111EA4D11200BA3325 /* AlertTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		793E8A131EA4D11200BA3325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		793E8A1A1EA4D11200BA3325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		793E8A1D1EA4D11200BA3325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		793E8A1F1EA4D11200BA3325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		793E8A281EA4D28700BA3325 /* AlertTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTransition.swift; sourceTree = "<group>"; };
-		793E8A2A1EA4D36A00BA3325 /* PresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
-		793E8A2C1EA4D39100BA3325 /* PercentDrivenInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentDrivenInteractiveTransition.swift; sourceTree = "<group>"; };
-		793E8A2E1EA4D3D400BA3325 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		793E8A351EA5B7C200BA3325 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		793E8A371EA5B98E00BA3325 /* EasyTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyTransitionController.swift; sourceTree = "<group>"; };
 		793E8A3A1EA5BC5C00BA3325 /* NormalAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NormalAlertController.swift; path = Alerts/NormalAlertController.swift; sourceTree = "<group>"; };
-		793E8A421EA5FCF600BA3325 /* EasyPercentDrivenTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyPercentDrivenTransition.swift; path = Transitions/EasyTransition/EasyPercentDrivenTransition.swift; sourceTree = "<group>"; };
-		793E8A431EA5FCF600BA3325 /* EasyTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyTransition.swift; path = Transitions/EasyTransition/EasyTransition.swift; sourceTree = "<group>"; };
 		793E8A481EA602B600BA3325 /* EasyStoryboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyStoryboardController.swift; sourceTree = "<group>"; };
-		79474AA31EA75C6800873736 /* MenuTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTransition.swift; path = Transitions/MenuTransition/MenuTransition.swift; sourceTree = "<group>"; };
 		79474AA51EA75E7100873736 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
-		79474AA71EA7643100873736 /* TrolleyTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrolleyTransition.swift; path = Transitions/TrolleyTransition.swift; sourceTree = "<group>"; };
 		79474AA91EA764EC00873736 /* TrolleyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrolleyController.swift; sourceTree = "<group>"; };
 		79474AAB1EA7702600873736 /* BackgroundTypeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundTypeController.swift; sourceTree = "<group>"; };
 		79962C081EA779D70046B631 /* BubbleTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BubbleTransition.swift; path = CustomTransition/BubbleTransition.swift; sourceTree = "<group>"; };
@@ -90,13 +68,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		793E89FE1EA4CFE200BA3325 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		793E8A0E1EA4D11200BA3325 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -126,19 +97,9 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7938B22A1EA75A2600F2D71B /* MenuTransition */ = {
-			isa = PBXGroup;
-			children = (
-				7938B22B1EA75A8500F2D71B /* MenuPercentDrivenTransition.swift */,
-				79474AA31EA75C6800873736 /* MenuTransition.swift */,
-			);
-			name = MenuTransition;
-			sourceTree = "<group>";
-		};
 		793E89F81EA4CFE200BA3325 = {
 			isa = PBXGroup;
 			children = (
-				793E8A041EA4CFE200BA3325 /* AlertTransition */,
 				793E8A121EA4D11200BA3325 /* AlertTransitionDemo */,
 				793E8A031EA4CFE200BA3325 /* Products */,
 				2539B46ED676C34DD8F7E1AB /* Pods */,
@@ -149,24 +110,9 @@
 		793E8A031EA4CFE200BA3325 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				793E8A021EA4CFE200BA3325 /* AlertTransition.framework */,
 				793E8A111EA4D11200BA3325 /* AlertTransitionDemo.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		793E8A041EA4CFE200BA3325 /* AlertTransition */ = {
-			isa = PBXGroup;
-			children = (
-				793E8A321EA5B08B00BA3325 /* Transitions */,
-				793E8A051EA4CFE200BA3325 /* AlertTransition.h */,
-				793E8A061EA4CFE200BA3325 /* Info.plist */,
-				793E8A281EA4D28700BA3325 /* AlertTransition.swift */,
-				793E8A2A1EA4D36A00BA3325 /* PresentationController.swift */,
-				793E8A2C1EA4D39100BA3325 /* PercentDrivenInteractiveTransition.swift */,
-				793E8A2E1EA4D3D400BA3325 /* Extensions.swift */,
-			);
-			path = AlertTransition;
 			sourceTree = "<group>";
 		};
 		793E8A121EA4D11200BA3325 /* AlertTransitionDemo */ = {
@@ -194,16 +140,6 @@
 			path = AlertTransitionDemo;
 			sourceTree = "<group>";
 		};
-		793E8A321EA5B08B00BA3325 /* Transitions */ = {
-			isa = PBXGroup;
-			children = (
-				7938B22A1EA75A2600F2D71B /* MenuTransition */,
-				793E8A411EA5FCDD00BA3325 /* EasyTransition */,
-				79474AA71EA7643100873736 /* TrolleyTransition.swift */,
-			);
-			name = Transitions;
-			sourceTree = "<group>";
-		};
 		793E8A391EA5BC1900BA3325 /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,15 +148,6 @@
 				790FE8131EA72F9B0040D499 /* SnapKitAlertController.swift */,
 			);
 			name = Alerts;
-			sourceTree = "<group>";
-		};
-		793E8A411EA5FCDD00BA3325 /* EasyTransition */ = {
-			isa = PBXGroup;
-			children = (
-				793E8A421EA5FCF600BA3325 /* EasyPercentDrivenTransition.swift */,
-				793E8A431EA5FCF600BA3325 /* EasyTransition.swift */,
-			);
-			name = EasyTransition;
 			sourceTree = "<group>";
 		};
 		79962C071EA7799C0046B631 /* CustomTransitions */ = {
@@ -246,36 +173,7 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		793E89FF1EA4CFE200BA3325 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				793E8A071EA4CFE200BA3325 /* AlertTransition.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		793E8A011EA4CFE200BA3325 /* AlertTransition */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 793E8A0A1EA4CFE200BA3325 /* Build configuration list for PBXNativeTarget "AlertTransition" */;
-			buildPhases = (
-				793E89FD1EA4CFE200BA3325 /* Sources */,
-				793E89FE1EA4CFE200BA3325 /* Frameworks */,
-				793E89FF1EA4CFE200BA3325 /* Headers */,
-				793E8A001EA4CFE200BA3325 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AlertTransition;
-			productName = AlertTransition;
-			productReference = 793E8A021EA4CFE200BA3325 /* AlertTransition.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		793E8A101EA4D11200BA3325 /* AlertTransitionDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 793E8A201EA4D11200BA3325 /* Build configuration list for PBXNativeTarget "AlertTransitionDemo" */;
@@ -306,12 +204,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Loopeer;
 				TargetAttributes = {
-					793E8A011EA4CFE200BA3325 = {
-						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = VS86A5N9W7;
-						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
-					};
 					793E8A101EA4D11200BA3325 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = VS86A5N9W7;
@@ -332,20 +224,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				793E8A011EA4CFE200BA3325 /* AlertTransition */,
 				793E8A101EA4D11200BA3325 /* AlertTransitionDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		793E8A001EA4CFE200BA3325 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		793E8A0F1EA4D11200BA3325 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -365,13 +249,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlertTransitionDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C40D1F90111075EAE56D68B8 /* [CP] Copy Pods Resources */ = {
@@ -395,9 +282,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AlertTransitionDemo/Pods-AlertTransitionDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AlertTransition/AlertTransition.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlertTransition.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -407,22 +299,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		793E89FD1EA4CFE200BA3325 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7938B22C1EA75A8500F2D71B /* MenuPercentDrivenTransition.swift in Sources */,
-				793E8A291EA4D28700BA3325 /* AlertTransition.swift in Sources */,
-				793E8A2D1EA4D39100BA3325 /* PercentDrivenInteractiveTransition.swift in Sources */,
-				793E8A451EA5FCF600BA3325 /* EasyTransition.swift in Sources */,
-				793E8A2B1EA4D36A00BA3325 /* PresentationController.swift in Sources */,
-				793E8A441EA5FCF600BA3325 /* EasyPercentDrivenTransition.swift in Sources */,
-				793E8A2F1EA4D3D400BA3325 /* Extensions.swift in Sources */,
-				79474AA41EA75C6800873736 /* MenuTransition.swift in Sources */,
-				79474AA81EA7643100873736 /* TrolleyTransition.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		793E8A0D1EA4D11200BA3325 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -566,51 +442,6 @@
 			};
 			name = Release;
 		};
-		793E8A0B1EA4CFE200BA3325 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = VS86A5N9W7;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AlertTransition/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.loopeer.AlertTransition;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		793E8A0C1EA4CFE200BA3325 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = VS86A5N9W7;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AlertTransition/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.loopeer.AlertTransition;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
 		793E8A211EA4D11200BA3325 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C892AFC9C414AC1076F0A085 /* Pods-AlertTransitionDemo.debug.xcconfig */;
@@ -649,15 +480,6 @@
 			buildConfigurations = (
 				793E8A081EA4CFE200BA3325 /* Debug */,
 				793E8A091EA4CFE200BA3325 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		793E8A0A1EA4CFE200BA3325 /* Build configuration list for PBXNativeTarget "AlertTransition" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				793E8A0B1EA4CFE200BA3325 /* Debug */,
-				793E8A0C1EA4CFE200BA3325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
